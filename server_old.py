@@ -2,7 +2,6 @@ import configparser
 import requests
 from camera import Camera
 from suspect import Suspect
-
 import threading
 from flask import Flask, Response
 

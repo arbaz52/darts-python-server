@@ -1,7 +1,7 @@
 import cv2
 from flask import Flask, Response
 import numpy as np
-
+import time
 app = Flask(__name__)
 
 cap = cv2.VideoCapture(0)
@@ -16,7 +16,6 @@ except:
 
 
 (w, h) = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-
 
 def gen():
     global w, h
@@ -36,8 +35,7 @@ def gen():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             cap.release()
             cv2.destroyAllWindows()
-        ''' 
-            
+        '''             
         _, encodedImage = cv2.imencode('.jpg', frame)
         yield(b'--frame\r\n' b'Content-Type: image/jpeg\r\n\r\n' + 
               bytearray(encodedImage) + 

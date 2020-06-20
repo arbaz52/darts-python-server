@@ -20,13 +20,14 @@ class FaceDAndR:
             x1, y1, width, height = result['box']
             x2, y2 = x1 + width, y1 + height
             face = frame[y1:y2, x1:x2]
-            image = Image.fromarray(face)
+            #image = Image.fromarray(face)
             
             #draw
             if drawOnFrame:
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 0), 3)
             
-            image = image.resize(requiredSize)
+            #image = image.resize(requiredSize)
+            image = cv2.resize(face, requiredSize)
             face_array = np.asarray(image)
             faces.append((face_array, (x1, y1, x2, y2)))
             
@@ -40,8 +41,9 @@ class FaceDAndR:
         yhat = self.vggface.predict(samples)
         return yhat
     
-    def is_match(self, emb1, emb2, thresh = 0.5):
+    def is_match(self, emb1, emb2, thresh = 0.39):
     	score = cosine(emb1, emb2)
+    	#print(score)
     	if score <= thresh:
             #print('>face is a Match (%.3f <= %.3f)' % (score, thresh))
             return True

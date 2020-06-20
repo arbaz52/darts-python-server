@@ -7,6 +7,9 @@ import numpy as np
 
 from Inventory import Suspect, Person, Track
 
+#overlapping of bboxes
+from imutils.object_detection import non_max_suppression
+
 import time
 
 cap = cv2.VideoCapture(0)
@@ -46,7 +49,7 @@ track = Track()
 print("Done")
 
 
-
+recognizeThresh = 5
 
 fps = FPS().start()
 i = 0
@@ -56,6 +59,8 @@ while cap.isOpened():
         continue
     #person detection
     bboxes, conf = pd.detect(frame, drawOnFrame=False)
+    #overlapping bounding boxes
+    bboxes = non_max_suppression(np.array(bboxes), probs=None, overlapThresh=0.65)
     #tracking
     if len(bboxes) > 0:
         tbboxes, tids = tk.track(frame, bboxes, conf, drawOnFrame=False)
@@ -63,6 +68,12 @@ while cap.isOpened():
             for i in range(len(tbboxes)):
                 tbbox = np.array(tbboxes[i], np.int32)
                 tid = tids[i]
+                #increasing fps by selective recognition
+                if track.hasPerson(tid):
+                    if track.people[tid].isSuspect():
+                        if time.time() - track.people[tid].whenRecognized < recognizeThresh:
+                            continue
+                        
                 person = frame[tbbox[1]:tbbox[3], tbbox[0]:tbbox[2]]
                 #cv2.imshow("person: ", person)
                 faces = fdr.extractFaces(person, drawOnFrame = False)
@@ -75,16 +86,18 @@ while cap.isOpened():
                 #check if he/she is a suspect
                 for suspect in suspects:
                     if fdr.is_match(suspect.em, fe):
-                        track.suspectDetected(tid, suspect)
+                        
+                        track.suspectDetected(tid, suspect, time.time(), frame)
                         #label = "{}: {}".format("Suspect: ", suspect.name)
                         #cv2.putText(frame, label, (tbbox[0], tbbox[1] + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
             
             #update track
             track.updatePositions(tbboxes, tids)
     
+    track.clearForgotten()
     #display bboxes and everything
     track.draw(frame)
-    
+
     cv2.imshow("frame", frame)
     
     fps.update()
