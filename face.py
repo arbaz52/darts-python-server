@@ -27,9 +27,12 @@ class FaceDAndR:
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 0), 3)
             
             #image = image.resize(requiredSize)
-            image = cv2.resize(face, requiredSize)
-            face_array = np.asarray(image)
-            faces.append((face_array, (x1, y1, x2, y2)))
+            try:
+                image = cv2.resize(face, requiredSize)
+                face_array = np.asarray(image)
+                faces.append((face_array, (x1, y1, x2, y2)))
+            except:
+                print("face size isn't fit for the model")
             
         return faces
         

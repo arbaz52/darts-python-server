@@ -41,7 +41,7 @@ class Person:
         
         
         #sending alert to server
-        url = "http://localhost:3000/server/"+serverId+"/alert/"
+        url = "https://darts-web-server.herokuapp.com/server/"+serverId+"/alert/"
         files ={'frame': ('frame.jpg', cv2.imencode(".jpg", frame)[1]) }
         d = {"cameraId": cameraId, "suspectId": self.suspect._id}
         r = requests.post(url,files=files, data=d)

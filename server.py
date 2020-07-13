@@ -6,7 +6,9 @@ from os.path import exists
 from face import FaceDAndR
 import cv2
 from Inventory import Suspect, Person, Track
+from preprocessing import Preprocessing
 import time
+import json
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -19,6 +21,8 @@ from flask import Flask, Response, make_response
 
 
 from imutils.object_detection import non_max_suppression
+
+from flask_ngrok import run_with_ngrok
 
 from person_detection import PersonDetection
 class Server:
@@ -39,9 +43,15 @@ class Server:
         et = time.time()
         self.log("TIME", "Action took {:2.6f}s".format((et-st)))
         
+        self.preprocessings = {}
         
         self.loadConfig()
-        self.loadServerInfoFromWeb()
+        data = self.loadServerInfoFromWeb()
+        if data is not None:
+            self.loadSuspects(data)
+            self.loadCameras(data)
+            self.loadPreprocessingValuesFromWeb(data)
+            
         self.keepProcessingFrames = False
         self.startProcessingFrames()
         self.startWebServer()
@@ -65,19 +75,56 @@ class Server:
         for k, v in self.cameras.items():
             v.stopThread()
         
+    
+        
+    
     def processFrameOf(self, camera):
         if not camera.isUp():
             self.log("WARN", "Video stream for Camera: " + camera._id + " not available")
             return
         maxt = 10
+        frame = None
         for i in range(1, maxt+1):
-            self.log("INFO", "Trying to accesss frame {}/{}".format(i, maxt))
-            ret, frame = camera.read()
-            if ret:
-                break
-        if not ret:
+            #self.log("INFO", "Trying to accesss frame {}/{}".format(i, maxt))
+            try:
+                ret, f = camera.read()
+                if ret:
+                    frame = f
+            except:
+                print("-", end="")
+        
+        if frame is None:
             self.log("WARN", "Couldn't access a valid frame")
             return
+        
+        
+        
+        if camera._id in self.preprocessings:
+            self.log("INFO", "Pre-Processing frame of camera: "+ camera._id)
+            st = time.time()
+            lineCoords = [(5, frame.shape[0] - 30*(i+1)) for i in range(3)]
+            pp = self.preprocessings[camera._id]
+            if 'brightness' in pp:
+                bv = pp['brightness']
+                frame = Preprocessing.adjustBrightness(frame, bv)
+                Preprocessing.putText(frame, "Brightness: " + str(bv), lineCoords[0])
+                
+            if 'sharpness' in pp:
+                sv = pp['sharpness']
+                frame = Preprocessing.sharpenImage(frame, k = sv)
+                Preprocessing.putText(frame, "Sharpness: " + str(sv), lineCoords[1])
+                
+            if 'denoise' in pp:
+                dv = pp['denoise']
+                if dv > 0:
+                    frame = Preprocessing.denoiseImage(frame, strength = dv)
+                    Preprocessing.putText(frame, "denoise: " + str(dv), lineCoords[2])
+            
+            et = time.time()
+            self.log("TIME", "Action took {:2.6f}s".format((et-st)))
+            
+        
+        
         #person detection
         #plt.imshow(frame)
         self.log("INFO", "Detecting People in the frame")
@@ -130,7 +177,12 @@ class Server:
         #display bboxes and everything
         camera.track.draw(frame)
         #udpate the processedFrame
-        cv2.imshow("Frame", frame)
+        #cv2.imshow("Frame", frame)
+        
+        t = time.localtime()
+        text = "Server: " + time.strftime("%H:%M:%S", t)
+        cv2.putText(frame, text, (10, 60), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 255, 255), 1)
+        
         with self.lock:
             camera.processedFrame = frame
             camera.processedFrameTime = time.time()
@@ -145,6 +197,7 @@ class Server:
         while self.keepProcessingFrames:
             key = keys[cameraCurrentlySelected]
             camera = self.cameras[key]
+            
             self.log("INFO", "Processing frame of camera: "+ key)
             st = time.time()
             self.processFrameOf(camera)
@@ -155,7 +208,7 @@ class Server:
             if cameraCurrentlySelected == len(keys):
                 cameraCurrentlySelected = 0
                 
-            time.sleep(2)
+            #time.sleep(2)
             
         self.log("INFO", "Stopped processing frames")
 
@@ -181,32 +234,27 @@ class Server:
     def loadServerInfoFromWeb(self):
         self.log("INFO", "fetching info from web!")
         
-        url = "http://"+self.WEB_SERVER+":"+self.WEB_SERVER_PORT+"/server/"
+        #url = "http://"+self.WEB_SERVER+":"+self.WEB_SERVER_PORT+"/server/"
+        url = self.WEB_SERVER + "server/"
+        print(url)
         
         #request server details
         resp = requests.get(url+self.SERVER_ID)
         if resp.status_code != 200:
             self.log("ERR","Could not fetch server details!")
-            return False
+            return None
         
         data = resp.json()
         if 'err' in data :
             self.log("ERR", data['err']['message'])
-            return False
+            return None
         
         #self.log("DATA", data)
         self.log("SUCC", "info recvd!")
         
+        self.data = data
         
-        
-        
-        self.loadSuspects(data)
-        self.loadCameras(data)
-        
-        
-        
-        
-        return True
+        return data
 
     def loadSuspects(self, data):
         self.log("INFO", "Loading suspects")
@@ -265,6 +313,18 @@ class Server:
         self.log("SUCC", "Cameras loaded")
         return True
     
+    def loadPreprocessingValuesFromWeb(self, data = None):
+        if data is None:
+            #loads the preprocessing values for the cameras
+            self.log("FETCH", "fetching preprocessing values from web")
+            data = self.loadServerInfoFromWeb()
+            self.loadPreprocessingValuesFromWeb(data)
+        else:
+            self.log("UPDATE", "Updating preprocessing values")
+            json.dumps(data)
+            self.preprocessings = data['server']['preprocessings']
+        
+    
     '''
     logger
     '''
@@ -281,7 +341,28 @@ class Server:
     def startWebServer(self):
         self.log("INFO", "Starting web server")
         app = Flask("Python server")
+        run_with_ngrok(app)
         self.app = app
+        
+        @app.route("/start")
+        def start():
+            self.startProcessingFrames()
+            self.log("START", "Starting server")
+            return make_response("Starting server", 200)
+            
+            
+        @app.route("/stop")
+        def stop():
+            self.stopProcessingFrames()
+            self.log("STOP", "Stopping server")
+            return make_response("Stopping server", 200)
+        
+        
+        @app.route("/updatep")
+        def updatePreprocessingValues():
+            self.log("UPDATE", "Updating preprocessing values")
+            self.loadPreprocessingValuesFromWeb()
+            return make_response("Updating preprocessing values", 200)
         
         #server commands to stop processing thread
         @app.route("/startfp")
@@ -311,9 +392,9 @@ class Server:
     
         
         
-        self.app.run(host='0.0.0.0', port=self.SERVER_PORT, debug=True,
-		threaded=True, use_reloader=False)
-        
+        #self.app.run(host='0.0.0.0', port=self.SERVER_PORT, debug=True,
+		#threaded=True, use_reloader=False)
+        self.app.run()
         
     def gen(self, cameraId):
         w, h = 300, 200
@@ -343,8 +424,7 @@ class Server:
                   b'\r\n')
         
 
-fdr = FaceDAndR()
+fdr = FaceDAndR() 
 server = Server()
-time.sleep(4)
 cv2.destroyAllWindows()
 

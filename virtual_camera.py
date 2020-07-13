@@ -29,7 +29,12 @@ def gen():
         except:
             print("exception while reading frame")
             frame = np.random.randint(0,256,(h, w,3), dtype=np.uint8)
-            
+        
+        frame = cv2.flip(frame, 1)
+        t = time.localtime()
+        text = "IPCamera: " + time.strftime("%H:%M:%S", t)
+        cv2.putText(frame, text, (10, 30), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 255), 1)
+        
         '''
         cv2.imshow("frame", frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
