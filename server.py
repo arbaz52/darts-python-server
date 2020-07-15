@@ -25,8 +25,12 @@ from imutils.object_detection import non_max_suppression
 from flask_ngrok import run_with_ngrok
 
 from person_detection import PersonDetection
+
+from logger import Logger
+
 class Server:
     def __init__(self):
+        self.log("START", "Server started")
         self.recognizeThresh = 5
         self.xo = 0
         self.lock = threading.Lock()
@@ -80,8 +84,8 @@ class Server:
     
     def processFrameOf(self, camera):
         if not camera.isUp():
-            self.log("WARN", "Video stream for Camera: " + camera._id + " not available")
-            return
+            #self.log("WARN", "Video stream for Camera: " + camera._id + " not available")
+            return False
         maxt = 10
         frame = None
         for i in range(1, maxt+1):
@@ -91,11 +95,11 @@ class Server:
                 if ret:
                     frame = f
             except:
-                print("-", end="")
+                yyyyy=1
         
         if frame is None:
-            self.log("WARN", "Couldn't access a valid frame")
-            return
+            #self.log("WARN", "Couldn't access a valid frame")
+            return False
         
         
         
@@ -187,6 +191,7 @@ class Server:
             camera.processedFrame = frame
             camera.processedFrameTime = time.time()
             self.xo = 1
+        return True
         
         
     def processFrames(self):
@@ -198,11 +203,12 @@ class Server:
             key = keys[cameraCurrentlySelected]
             camera = self.cameras[key]
             
-            self.log("INFO", "Processing frame of camera: "+ key)
+            #self.log("INFO", "Processing frame of camera: "+ key)
             st = time.time()
-            self.processFrameOf(camera)
+            frameProcessed = self.processFrameOf(camera)
             et = time.time()
-            self.log("TIME", "Action took {:2.6f}s".format((et-st)))
+            if frameProcessed:
+                self.log("TIME", "Processing frame: Action took {:2.6f}s".format((et-st)))
             cameraCurrentlySelected += 1
             
             if cameraCurrentlySelected == len(keys):
@@ -328,9 +334,9 @@ class Server:
     '''
     logger
     '''
-        
     def log(self, _type, msg):
-        print("[{}]: {}".format(_type, msg))
+        Logger._log(_type, msg)
+        
         
         
             
@@ -343,6 +349,17 @@ class Server:
         app = Flask("Python server")
         run_with_ngrok(app)
         self.app = app
+        
+        @app.route("/logs")
+        def logs():
+            try:
+                s=""
+                with open("log.txt", 'r') as fp:
+                    for line in fp.readlines():
+                        s += line + "<br>"
+                    return make_response(s, 200)
+            except:
+                return make_response("No logs", 200)
         
         @app.route("/start")
         def start():
