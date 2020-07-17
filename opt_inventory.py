@@ -11,6 +11,7 @@ class Suspect:
         self.pictures = pictures
         self.personId = None
         self.last_time_recognized = None
+        self.last_time_alert_generated = None
         self.loadEmbeddings(fdr)
     
     def loadEmbeddings(self, fdr):
@@ -37,13 +38,17 @@ class Suspect:
     
     
     def generateAlert(self, frame, serverId, cameraId):
-        print("Suspect recognized: " + self.fullName)
-        #sending alert to server
-        url = "https://darts-web-server.herokuapp.com/server/"+serverId+"/alert/"
-        files ={'frame': ('frame.jpg', cv2.imencode(".jpg", frame)[1]) }
-        d = {"cameraId": cameraId, "suspectId": self._id}
-        r = requests.post(url,files=files, data=d)
-        print(r.json())
+        if self.last_time_alert_generated is None or time.time() - self.last_time_alert_generated > 20:
+            self.last_time_alert_generated = time.time()
+            print("Generating alert for: " + self.fullName)
+            #sending alert to server
+            url = "https://darts-web-server.herokuapp.com/server/"+serverId+"/alert/"
+            files ={'frame': ('frame.jpg', cv2.imencode(".jpg", frame)[1]) }
+            d = {"cameraId": cameraId, "suspectId": self._id}
+            r = requests.post(url,files=files, data=d)
+            print(r.json())
+        else:
+            print("Alert generated for " + self.fullName + "less than 20 seconds ago!")
     
     
     def update(self):
