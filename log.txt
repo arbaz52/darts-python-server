@@ -580,3 +580,106 @@
 [TIME]: 07/17/20 06:36:56 - Processing frame: Action took 5.194153s
 [TIME]: 07/17/20 06:37:02 - Processing frame: Action took 5.843652s
 [CONN]: 07/17/20 06:37:03 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[START]: 07/17/20 06:49:00 - Server started
+[INFO]: 07/17/20 06:49:00 - Loading Models
+[TIME]: 07/17/20 06:49:00 - Action took 0.413893s
+[INFO]: 07/17/20 06:49:00 - Loading config
+[SUCC]: 07/17/20 06:49:00 - Done loading
+[INFO]: 07/17/20 06:49:00 - fetching info from web!
+[SUCC]: 07/17/20 06:49:02 - info recvd!
+[INFO]: 07/17/20 06:49:02 - Loading suspects
+[SUCC]: 07/17/20 06:49:16 - Suspects loaded
+[INFO]: 07/17/20 06:49:16 - Loading cameras
+[CONN]: 07/17/20 06:49:16 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:49:16 - done
+[SUCC]: 07/17/20 06:49:16 - Cameras loaded
+[UPDATE]: 07/17/20 06:49:16 - Updating preprocessing values
+[INFO]: 07/17/20 06:49:16 - Starting processing frames - thread
+[INFO]: 07/17/20 06:49:16 - Started processing frames
+[INFO]: 07/17/20 06:49:16 - Starting web server
+[TIME]: 07/17/20 06:49:25 - Processing frame: Action took 8.920182s
+[TIME]: 07/17/20 06:49:30 - Processing frame: Action took 4.850033s
+[TIME]: 07/17/20 06:49:31 - Processing frame: Action took 1.189819s
+[TIME]: 07/17/20 06:49:33 - Processing frame: Action took 1.481037s
+[TIME]: 07/17/20 06:49:36 - Processing frame: Action took 1.483037s
+[TIME]: 07/17/20 06:49:41 - Processing frame: Action took 1.728380s
+[HAP]: 07/17/20 06:49:44 - Value changed
+[TIME]: 07/17/20 06:49:44 - Processing frame: Action took 3.573446s
+[TIME]: 07/17/20 06:49:48 - Processing frame: Action took 3.183489s
+[TIME]: 07/17/20 06:49:50 - Processing frame: Action took 2.158231s
+[TIME]: 07/17/20 06:49:52 - Processing frame: Action took 2.365667s
+[TIME]: 07/17/20 06:50:01 - Processing frame: Action took 8.693759s
+[TIME]: 07/17/20 06:50:04 - Processing frame: Action took 3.099713s
+[TIME]: 07/17/20 06:50:09 - Processing frame: Action took 4.595714s
+[TIME]: 07/17/20 06:50:13 - Processing frame: Action took 4.491001s
+[TIME]: 07/17/20 06:50:18 - Processing frame: Action took 5.317782s
+[TIME]: 07/17/20 06:50:20 - Processing frame: Action took 2.025585s
+[TIME]: 07/17/20 06:50:23 - Processing frame: Action took 2.125318s
+[TIME]: 07/17/20 06:50:25 - Processing frame: Action took 1.981703s
+[TIME]: 07/17/20 06:50:26 - Processing frame: Action took 0.865687s
+[TIME]: 07/17/20 06:50:27 - Processing frame: Action took 1.967740s
+[TIME]: 07/17/20 06:50:28 - Processing frame: Action took 0.938490s
+[TIME]: 07/17/20 06:50:29 - Processing frame: Action took 0.997334s
+[TIME]: 07/17/20 06:50:32 - Processing frame: Action took 2.083432s
+[TIME]: 07/17/20 06:50:33 - Processing frame: Action took 1.107040s
+[TIME]: 07/17/20 06:50:34 - Processing frame: Action took 0.827786s
+[TIME]: 07/17/20 06:50:34 - Processing frame: Action took 0.852720s
+[TIME]: 07/17/20 06:50:35 - Processing frame: Action took 0.863692s
+[TIME]: 07/17/20 06:50:41 - Processing frame: Action took 5.253954s
+[HAP]: 07/17/20 06:50:44 - Value changed
+[TIME]: 07/17/20 06:50:47 - Processing frame: Action took 6.924488s
+[TIME]: 07/17/20 06:50:52 - Processing frame: Action took 4.802164s
+[TIME]: 07/17/20 06:50:58 - Processing frame: Action took 5.209073s
+[TIME]: 07/17/20 06:51:01 - Processing frame: Action took 3.285216s
+[TIME]: 07/17/20 06:51:04 - Processing frame: Action took 3.195458s
+[TIME]: 07/17/20 06:51:06 - Processing frame: Action took 1.143942s
+[TIME]: 07/17/20 06:51:07 - Processing frame: Action took 1.029250s
+[TIME]: 07/17/20 06:51:09 - Processing frame: Action took 1.284564s
+[TIME]: 07/17/20 06:51:10 - Processing frame: Action took 1.574792s
+[HAP]: 07/17/20 06:51:11 - Value changed
+[TIME]: 07/17/20 06:51:13 - Processing frame: Action took 2.197126s
+[TIME]: 07/17/20 06:51:16 - Processing frame: Action took 2.915207s
+[TIME]: 07/17/20 06:51:18 - Processing frame: Action took 2.887279s
+[TIME]: 07/17/20 06:51:21 - Processing frame: Action took 2.387619s
+[TIME]: 07/17/20 06:51:24 - Processing frame: Action took 2.945126s
+[TIME]: 07/17/20 06:51:31 - Processing frame: Action took 7.093037s
+[TIME]: 07/17/20 06:51:37 - Processing frame: Action took 6.436792s
+[TIME]: 07/17/20 06:51:42 - Processing frame: Action took 4.723373s
+[TIME]: 07/17/20 06:51:48 - Processing frame: Action took 5.571106s
+[CONN]: 07/17/20 06:51:50 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:52:05 - done
+[CONN]: 07/17/20 06:52:05 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:52:06 - done
+[TIME]: 07/17/20 06:52:08 - Processing frame: Action took 2.402579s
+[HAP]: 07/17/20 06:52:12 - Value changed
+[TIME]: 07/17/20 06:52:12 - Processing frame: Action took 2.895260s
+[TIME]: 07/17/20 06:52:13 - Processing frame: Action took 1.126987s
+[TIME]: 07/17/20 06:52:15 - Processing frame: Action took 2.045531s
+[TIME]: 07/17/20 06:52:18 - Processing frame: Action took 3.122651s
+[TIME]: 07/17/20 06:52:22 - Processing frame: Action took 3.172575s
+[TIME]: 07/17/20 06:52:31 - Processing frame: Action took 9.620280s
+[TIME]: 07/17/20 06:52:36 - Processing frame: Action took 4.944780s
+[TIME]: 07/17/20 06:52:42 - Processing frame: Action took 5.433513s
+[TIME]: 07/17/20 06:52:45 - Processing frame: Action took 2.480367s
+[TIME]: 07/17/20 06:52:48 - Processing frame: Action took 2.588082s
+[TIME]: 07/17/20 06:52:50 - Processing frame: Action took 2.905233s
+[TIME]: 07/17/20 06:52:53 - Processing frame: Action took 2.254973s
+[TIME]: 07/17/20 06:52:55 - Processing frame: Action took 1.999703s
+[TIME]: 07/17/20 06:52:57 - Processing frame: Action took 2.471441s
+[TIME]: 07/17/20 06:53:02 - Processing frame: Action took 5.178141s
+[TIME]: 07/17/20 06:53:07 - Processing frame: Action took 4.467059s
+[TIME]: 07/17/20 06:53:11 - Processing frame: Action took 3.727037s
+[TIME]: 07/17/20 06:53:16 - Processing frame: Action took 5.558254s
+[TIME]: 07/17/20 06:53:20 - Processing frame: Action took 3.844721s
+[TIME]: 07/17/20 06:53:22 - Processing frame: Action took 2.349717s
+[TIME]: 07/17/20 06:53:25 - Processing frame: Action took 2.623985s
+[TIME]: 07/17/20 06:53:27 - Processing frame: Action took 1.894934s
+[TIME]: 07/17/20 06:53:29 - Processing frame: Action took 2.612016s
+[TIME]: 07/17/20 06:53:33 - Processing frame: Action took 3.219392s
+[TIME]: 07/17/20 06:53:36 - Processing frame: Action took 2.804502s
+[TIME]: 07/17/20 06:53:43 - Processing frame: Action took 7.911849s
+[TIME]: 07/17/20 06:53:48 - Processing frame: Action took 4.369318s
+[TIME]: 07/17/20 06:53:54 - Processing frame: Action took 6.429810s
+[TIME]: 07/17/20 06:54:01 - Processing frame: Action took 6.350024s
+[TIME]: 07/17/20 06:54:06 - Processing frame: Action took 5.710734s
+[CONN]: 07/17/20 06:54:08 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
