@@ -1,1442 +1,582 @@
 
-[START]: 07/15/20 16:13:17 - Server started
-[INFO]: 07/15/20 16:13:17 - Loading Models
-[TIME]: 07/15/20 16:13:17 - Action took 0.120510s
-[INFO]: 07/15/20 16:13:17 - Loading config
-[SUCC]: 07/15/20 16:13:17 - Done loading
-[INFO]: 07/15/20 16:13:17 - fetching info from web!
-[SUCC]: 07/15/20 16:13:18 - info recvd!
-[INFO]: 07/15/20 16:13:18 - Loading suspects
-[SUCC]: 07/15/20 16:13:23 - Suspects loaded
-[INFO]: 07/15/20 16:13:23 - Loading cameras
-[INFO]: 07/15/20 16:13:23 - Opening camera stream!
-[SUCC]: 07/15/20 16:13:25 - Camera stream opened!
-[SUCC]: 07/15/20 16:13:25 - Cameras loaded
-[UPDATE]: 07/15/20 16:13:25 - Updating preprocessing values
-[INFO]: 07/15/20 16:13:25 - Starting processing frames - thread
-[INFO]: 07/15/20 16:13:25 - Started processing frames
-[INFO]: 07/15/20 16:13:25 - Starting web server
-[INFO]: 07/15/20 16:13:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:25 - Action took 0.005984s
-[INFO]: 07/15/20 16:13:25 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:26 - Applying nms
-[INFO]: 07/15/20 16:13:26 - Tracking people 1
-[TIME]: 07/15/20 16:13:26 - Processing frame: Action took 0.634787s
-[INFO]: 07/15/20 16:13:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:26 - Action took 0.004990s
-[INFO]: 07/15/20 16:13:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:26 - Applying nms
-[INFO]: 07/15/20 16:13:26 - Tracking people 1
-[TIME]: 07/15/20 16:13:26 - Processing frame: Action took 0.349066s
-[INFO]: 07/15/20 16:13:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:26 - Action took 0.005985s
-[INFO]: 07/15/20 16:13:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:26 - Applying nms
-[INFO]: 07/15/20 16:13:26 - Tracking people 1
-[TIME]: 07/15/20 16:13:27 - Processing frame: Action took 0.569516s
-[INFO]: 07/15/20 16:13:27 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:27 - Action took 0.006981s
-[INFO]: 07/15/20 16:13:27 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:27 - Applying nms
-[INFO]: 07/15/20 16:13:27 - Tracking people 1
-[TIME]: 07/15/20 16:13:27 - Processing frame: Action took 0.523610s
-[INFO]: 07/15/20 16:13:27 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:27 - Action took 0.006982s
-[INFO]: 07/15/20 16:13:27 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:28 - Applying nms
-[INFO]: 07/15/20 16:13:28 - Tracking people 1
-[TIME]: 07/15/20 16:13:28 - Processing frame: Action took 0.618019s
-[INFO]: 07/15/20 16:13:28 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:28 - Action took 0.004560s
-[INFO]: 07/15/20 16:13:28 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:28 - Applying nms
-[INFO]: 07/15/20 16:13:28 - Tracking people 1
-[TIME]: 07/15/20 16:13:28 - Processing frame: Action took 0.588284s
-[INFO]: 07/15/20 16:13:28 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:28 - Action took 0.005985s
-[INFO]: 07/15/20 16:13:28 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:29 - Applying nms
-[INFO]: 07/15/20 16:13:29 - Tracking people 1
-[TIME]: 07/15/20 16:13:29 - Processing frame: Action took 0.580538s
-[INFO]: 07/15/20 16:13:29 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:29 - Action took 0.006981s
-[INFO]: 07/15/20 16:13:29 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:29 - Applying nms
-[INFO]: 07/15/20 16:13:29 - Tracking people 1
-[TIME]: 07/15/20 16:13:30 - Processing frame: Action took 0.671865s
-[INFO]: 07/15/20 16:13:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:30 - Action took 0.005984s
-[INFO]: 07/15/20 16:13:30 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:30 - Applying nms
-[INFO]: 07/15/20 16:13:30 - Tracking people 1
-[TIME]: 07/15/20 16:13:30 - Processing frame: Action took 0.586431s
-[INFO]: 07/15/20 16:13:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:30 - Action took 0.014958s
-[INFO]: 07/15/20 16:13:30 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:31 - Applying nms
-[INFO]: 07/15/20 16:13:31 - Tracking people 1
-[TIME]: 07/15/20 16:13:31 - Processing frame: Action took 0.682175s
-[INFO]: 07/15/20 16:13:31 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:31 - Action took 0.003990s
-[INFO]: 07/15/20 16:13:31 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:31 - Applying nms
-[INFO]: 07/15/20 16:13:31 - Tracking people 1
-[TIME]: 07/15/20 16:13:32 - Processing frame: Action took 0.531579s
-[INFO]: 07/15/20 16:13:32 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:32 - Action took 0.005980s
-[INFO]: 07/15/20 16:13:32 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:32 - Applying nms
-[INFO]: 07/15/20 16:13:32 - Tracking people 1
-[TIME]: 07/15/20 16:13:32 - Processing frame: Action took 0.504167s
-[INFO]: 07/15/20 16:13:32 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:32 - Action took 0.005981s
-[INFO]: 07/15/20 16:13:32 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:32 - Applying nms
-[INFO]: 07/15/20 16:13:32 - Tracking people 1
-[TIME]: 07/15/20 16:13:33 - Processing frame: Action took 0.529117s
-[INFO]: 07/15/20 16:13:33 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:33 - Action took 0.003989s
-[INFO]: 07/15/20 16:13:33 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:33 - Applying nms
-[INFO]: 07/15/20 16:13:33 - Tracking people 1
-[TIME]: 07/15/20 16:13:33 - Processing frame: Action took 0.522688s
-[INFO]: 07/15/20 16:13:33 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:33 - Action took 0.005985s
-[INFO]: 07/15/20 16:13:33 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:34 - Applying nms
-[INFO]: 07/15/20 16:13:34 - Tracking people 1
-[TIME]: 07/15/20 16:13:34 - Processing frame: Action took 0.630269s
-[INFO]: 07/15/20 16:13:34 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:34 - Action took 0.003989s
-[INFO]: 07/15/20 16:13:34 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:34 - Applying nms
-[INFO]: 07/15/20 16:13:34 - Tracking people 1
-[TIME]: 07/15/20 16:13:34 - Processing frame: Action took 0.499690s
-[INFO]: 07/15/20 16:13:34 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:34 - Action took 0.005984s
-[INFO]: 07/15/20 16:13:34 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:35 - Applying nms
-[INFO]: 07/15/20 16:13:35 - Tracking people 1
-[TIME]: 07/15/20 16:13:35 - Processing frame: Action took 0.657243s
-[INFO]: 07/15/20 16:13:35 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:35 - Action took 0.003990s
-[INFO]: 07/15/20 16:13:35 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:35 - Applying nms
-[INFO]: 07/15/20 16:13:35 - Tracking people 1
-[TIME]: 07/15/20 16:13:36 - Processing frame: Action took 0.593001s
-[INFO]: 07/15/20 16:13:36 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:36 - Action took 0.005984s
-[INFO]: 07/15/20 16:13:36 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:36 - Applying nms
-[INFO]: 07/15/20 16:13:36 - Tracking people 1
-[TIME]: 07/15/20 16:13:36 - Processing frame: Action took 0.614908s
-[INFO]: 07/15/20 16:13:36 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:36 - Action took 0.005984s
-[INFO]: 07/15/20 16:13:36 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:37 - Applying nms
-[INFO]: 07/15/20 16:13:37 - Tracking people 1
-[TIME]: 07/15/20 16:13:37 - Processing frame: Action took 0.690701s
-[INFO]: 07/15/20 16:13:37 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:37 - Action took 0.007978s
-[INFO]: 07/15/20 16:13:37 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:37 - Applying nms
-[INFO]: 07/15/20 16:13:37 - Tracking people 1
-[TIME]: 07/15/20 16:13:40 - Processing frame: Action took 3.496586s
-[INFO]: 07/15/20 16:13:40 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:40 - Action took 0.002993s
-[INFO]: 07/15/20 16:13:40 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:41 - Applying nms
-[INFO]: 07/15/20 16:13:41 - Tracking people 1
-[TIME]: 07/15/20 16:13:41 - Processing frame: Action took 0.411417s
-[INFO]: 07/15/20 16:13:41 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:41 - Action took 0.003988s
-[INFO]: 07/15/20 16:13:41 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:41 - Applying nms
-[INFO]: 07/15/20 16:13:41 - Tracking people 1
-[TIME]: 07/15/20 16:13:41 - Processing frame: Action took 0.391003s
-[INFO]: 07/15/20 16:13:41 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:41 - Action took 0.005986s
-[INFO]: 07/15/20 16:13:41 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:42 - Applying nms
-[INFO]: 07/15/20 16:13:42 - Tracking people 1
-[TIME]: 07/15/20 16:13:42 - Processing frame: Action took 0.466855s
-[INFO]: 07/15/20 16:13:42 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:42 - Action took 0.008976s
-[INFO]: 07/15/20 16:13:42 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:42 - Applying nms
-[INFO]: 07/15/20 16:13:42 - Tracking people 1
-[TIME]: 07/15/20 16:13:42 - Processing frame: Action took 0.415853s
-[INFO]: 07/15/20 16:13:42 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:42 - Action took 0.002989s
-[INFO]: 07/15/20 16:13:42 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:43 - Applying nms
-[INFO]: 07/15/20 16:13:43 - Tracking people 1
-[TIME]: 07/15/20 16:13:43 - Processing frame: Action took 0.523636s
-[INFO]: 07/15/20 16:13:43 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:43 - Action took 0.006981s
-[INFO]: 07/15/20 16:13:43 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:43 - Applying nms
-[INFO]: 07/15/20 16:13:43 - Tracking people 1
-[TIME]: 07/15/20 16:13:43 - Processing frame: Action took 0.529135s
-[INFO]: 07/15/20 16:13:43 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:43 - Action took 0.003988s
-[INFO]: 07/15/20 16:13:43 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:44 - Applying nms
-[INFO]: 07/15/20 16:13:44 - Tracking people 1
-[TIME]: 07/15/20 16:13:44 - Processing frame: Action took 0.637359s
-[INFO]: 07/15/20 16:13:44 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:44 - Action took 0.009972s
-[INFO]: 07/15/20 16:13:44 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:44 - Applying nms
-[INFO]: 07/15/20 16:13:44 - Tracking people 1
-[TIME]: 07/15/20 16:13:46 - Processing frame: Action took 2.422235s
-[INFO]: 07/15/20 16:13:46 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:46 - Action took 0.048121s
-[INFO]: 07/15/20 16:13:46 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:47 - Applying nms
-[INFO]: 07/15/20 16:13:47 - Tracking people 1
-[TIME]: 07/15/20 16:13:47 - Processing frame: Action took 0.938123s
-[INFO]: 07/15/20 16:13:47 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:47 - Action took 0.006982s
-[INFO]: 07/15/20 16:13:47 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:48 - Applying nms
-[INFO]: 07/15/20 16:13:48 - Tracking people 1
-[TIME]: 07/15/20 16:13:48 - Processing frame: Action took 0.699887s
-[INFO]: 07/15/20 16:13:48 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:48 - Action took 0.006981s
-[INFO]: 07/15/20 16:13:48 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:49 - Applying nms
-[INFO]: 07/15/20 16:13:49 - Tracking people 1
-[TIME]: 07/15/20 16:13:49 - Processing frame: Action took 1.247669s
-[INFO]: 07/15/20 16:13:49 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:50 - Action took 0.006981s
-[INFO]: 07/15/20 16:13:50 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:50 - Applying nms
-[INFO]: 07/15/20 16:13:50 - Tracking people 1
-[TIME]: 07/15/20 16:13:51 - Processing frame: Action took 1.327413s
-[INFO]: 07/15/20 16:13:51 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:51 - Action took 0.006981s
-[INFO]: 07/15/20 16:13:51 - Detecting People in the frame
-[HAP]: 07/15/20 16:13:51 - Value changed
-[INFO]: 07/15/20 16:13:52 - Applying nms
-[INFO]: 07/15/20 16:13:52 - Tracking people 1
-[TIME]: 07/15/20 16:13:55 - Processing frame: Action took 3.996159s
-[INFO]: 07/15/20 16:13:55 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:13:55 - Action took 0.033024s
-[INFO]: 07/15/20 16:13:55 - Detecting People in the frame
-[INFO]: 07/15/20 16:13:55 - Applying nms
-[INFO]: 07/15/20 16:13:55 - Tracking people 1
-[TIME]: 07/15/20 16:13:58 - Processing frame: Action took 3.476421s
-[INFO]: 07/15/20 16:13:58 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:13:58 - Detecting People in the frame
-[TIME]: 07/15/20 16:13:58 - Action took 0.026928s
-[INFO]: 07/15/20 16:13:59 - Applying nms
-[INFO]: 07/15/20 16:13:59 - Tracking people 1
-[TIME]: 07/15/20 16:14:01 - Processing frame: Action took 2.279380s
-[INFO]: 07/15/20 16:14:01 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:01 - Action took 0.040890s
-[INFO]: 07/15/20 16:14:01 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:01 - Applying nms
-[INFO]: 07/15/20 16:14:01 - Tracking people 1
-[TIME]: 07/15/20 16:14:03 - Processing frame: Action took 2.063979s
-[INFO]: 07/15/20 16:14:03 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:03 - Action took 0.055851s
-[INFO]: 07/15/20 16:14:03 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:03 - Tracking people 1
-[INFO]: 07/15/20 16:14:03 - Applying nms
-[TIME]: 07/15/20 16:14:07 - Processing frame: Action took 4.144534s
-[INFO]: 07/15/20 16:14:07 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:07 - Action took 0.037872s
-[INFO]: 07/15/20 16:14:07 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:08 - Applying nms
-[INFO]: 07/15/20 16:14:08 - Tracking people 1
-[TIME]: 07/15/20 16:14:10 - Processing frame: Action took 3.210316s
-[INFO]: 07/15/20 16:14:10 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:10 - Action took 0.041888s
-[INFO]: 07/15/20 16:14:10 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:11 - Applying nms
-[INFO]: 07/15/20 16:14:11 - Tracking people 1
-[TIME]: 07/15/20 16:14:11 - Processing frame: Action took 0.727743s
-[INFO]: 07/15/20 16:14:11 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:11 - Action took 0.044879s
-[INFO]: 07/15/20 16:14:11 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:11 - Applying nms
-[INFO]: 07/15/20 16:14:11 - Tracking people 1
-[TIME]: 07/15/20 16:14:11 - Processing frame: Action took 0.720923s
-[INFO]: 07/15/20 16:14:12 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:14:12 - Detecting People in the frame
-[TIME]: 07/15/20 16:14:12 - Action took 0.045727s
-[INFO]: 07/15/20 16:14:12 - Applying nms
-[INFO]: 07/15/20 16:14:12 - Tracking people 1
-[TIME]: 07/15/20 16:14:12 - Processing frame: Action took 0.827782s
-[INFO]: 07/15/20 16:14:12 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:12 - Action took 0.025932s
-[INFO]: 07/15/20 16:14:12 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:13 - Applying nms
-[INFO]: 07/15/20 16:14:13 - Tracking people 1
-[TIME]: 07/15/20 16:14:13 - Processing frame: Action took 0.747798s
-[INFO]: 07/15/20 16:14:13 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:13 - Action took 0.101727she frame
-[INFO]: 07/15/20 16:14:14 - Applying nms
-[INFO]: 07/15/20 16:14:14 - Tracking people 1
-[TIME]: 07/15/20 16:14:14 - Processing frame: Action took 1.039219s
-[INFO]: 07/15/20 16:14:14 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:14 - Action took 0.040877s
-[INFO]: 07/15/20 16:14:14 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:15 - Applying nms
-[INFO]: 07/15/20 16:14:15 - Tracking people 1
-[TIME]: 07/15/20 16:14:15 - Processing frame: Action took 0.788924s
-[INFO]: 07/15/20 16:14:15 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:15 - Action took 0.043882s
-[INFO]: 07/15/20 16:14:15 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:16 - Applying nms
-[INFO]: 07/15/20 16:14:16 - Tracking people 1
-[TIME]: 07/15/20 16:14:17 - Processing frame: Action took 2.414393s
-[INFO]: 07/15/20 16:14:17 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:17 - Action took 0.046874s
-[INFO]: 07/15/20 16:14:17 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:18 - Applying nms
-[INFO]: 07/15/20 16:14:18 - Tracking people 1
-[TIME]: 07/15/20 16:14:20 - Processing frame: Action took 2.209128s
-[INFO]: 07/15/20 16:14:20 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:20 - Action took 0.043883s
-[INFO]: 07/15/20 16:14:20 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:20 - Tracking people 1
-[TIME]: 07/15/20 16:14:22 - Processing frame: Action took 2.059428s
-[INFO]: 07/15/20 16:14:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:22 - Action took 0.036902s
-[INFO]: 07/15/20 16:14:22 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:22 - Applying nms
-[INFO]: 07/15/20 16:14:22 - Tracking people 1
-[TIME]: 07/15/20 16:14:24 - Processing frame: Action took 2.207750s
-[INFO]: 07/15/20 16:14:24 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:24 - Action took 0.034908s
-[INFO]: 07/15/20 16:14:24 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:24 - Applying nms
-[INFO]: 07/15/20 16:14:24 - Tracking people 1
-[TIME]: 07/15/20 16:14:26 - Processing frame: Action took 2.314469s
-[INFO]: 07/15/20 16:14:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:26 - Action took 0.027925s
-[INFO]: 07/15/20 16:14:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:27 - Applying nms
-[INFO]: 07/15/20 16:14:27 - Tracking people 1
-[TIME]: 07/15/20 16:14:29 - Processing frame: Action took 2.368451s
-[INFO]: 07/15/20 16:14:29 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:29 - Action took 0.038895s
-[INFO]: 07/15/20 16:14:29 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:29 - Applying nms
-[INFO]: 07/15/20 16:14:29 - Tracking people 1
-[TIME]: 07/15/20 16:14:30 - Processing frame: Action took 1.685172s
-[INFO]: 07/15/20 16:14:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:30 - Action took 0.044879s
-[INFO]: 07/15/20 16:14:30 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:31 - Applying nms
-[INFO]: 07/15/20 16:14:31 - Tracking people 1
-[TIME]: 07/15/20 16:14:33 - Processing frame: Action took 2.265488s
-[INFO]: 07/15/20 16:14:33 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:33 - Action took 0.053858s
-[INFO]: 07/15/20 16:14:33 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:33 - Applying nms
-[INFO]: 07/15/20 16:14:33 - Tracking people 1
-[TIME]: 07/15/20 16:14:35 - Processing frame: Action took 2.033767s
-[INFO]: 07/15/20 16:14:35 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:35 - Action took 0.027926s
-[INFO]: 07/15/20 16:14:35 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:35 - Applying nms
-[INFO]: 07/15/20 16:14:35 - Tracking people 1
-[TIME]: 07/15/20 16:14:36 - Processing frame: Action took 1.259175s
-[INFO]: 07/15/20 16:14:36 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:36 - Action took 0.050865s
-[INFO]: 07/15/20 16:14:36 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:36 - Applying nms
-[INFO]: 07/15/20 16:14:37 - Tracking people 1
-[TIME]: 07/15/20 16:14:38 - Processing frame: Action took 2.066380s
-[INFO]: 07/15/20 16:14:38 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:38 - Action took 0.050864s
-[INFO]: 07/15/20 16:14:38 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:39 - Applying nms
-[INFO]: 07/15/20 16:14:39 - Tracking people 1
-[TIME]: 07/15/20 16:14:40 - Processing frame: Action took 2.090641s
-[INFO]: 07/15/20 16:14:40 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:40 - Action took 0.037899s
-[INFO]: 07/15/20 16:14:40 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:41 - Applying nmsple 1
-[TIME]: 07/15/20 16:14:43 - Processing frame: Action took 2.901769s
-[INFO]: 07/15/20 16:14:43 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:43 - Action took 0.045960s
-[INFO]: 07/15/20 16:14:43 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:44 - Applying nms
-[INFO]: 07/15/20 16:14:44 - Tracking people 1
-[TIME]: 07/15/20 16:14:44 - Processing frame: Action took 0.732816s
-[INFO]: 07/15/20 16:14:44 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:44 - Action took 0.049022s
-[INFO]: 07/15/20 16:14:44 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:44 - Applying nms
-[INFO]: 07/15/20 16:14:44 - Tracking people 1
-[TIME]: 07/15/20 16:14:45 - Processing frame: Action took 0.826207s
-[INFO]: 07/15/20 16:14:45 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:14:45 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:45 - Applying nms
-[INFO]: 07/15/20 16:14:45 - Tracking people 1
-[TIME]: 07/15/20 16:14:45 - Processing frame: Action took 0.687911s
-[INFO]: 07/15/20 16:14:45 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:45 - Action took 0.034907s
-[INFO]: 07/15/20 16:14:45 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:46 - Applying nms
-[INFO]: 07/15/20 16:14:46 - Tracking people 1
-[TIME]: 07/15/20 16:14:46 - Processing frame: Action took 0.698133s
-[INFO]: 07/15/20 16:14:46 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:46 - Action took 0.052859s
-[INFO]: 07/15/20 16:14:46 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:47 - Applying nms
-[INFO]: 07/15/20 16:14:47 - Tracking people 1
-[TIME]: 07/15/20 16:14:47 - Processing frame: Action took 0.637327s
-[INFO]: 07/15/20 16:14:47 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:47 - Action took 0.031914s
-[INFO]: 07/15/20 16:14:47 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:47 - Applying nms
-[INFO]: 07/15/20 16:14:47 - Tracking people 1
-[TIME]: 07/15/20 16:14:47 - Processing frame: Action took 0.708620s
-[INFO]: 07/15/20 16:14:47 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:48 - Action took 0.049868s
-[INFO]: 07/15/20 16:14:48 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:48 - Applying nms
-[INFO]: 07/15/20 16:14:48 - Tracking people 1
-[TIME]: 07/15/20 16:14:50 - Processing frame: Action took 2.325844s
-[INFO]: 07/15/20 16:14:50 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:50 - Action took 0.022938s
-[INFO]: 07/15/20 16:14:50 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:50 - Applying nms
-[INFO]: 07/15/20 16:14:50 - Tracking people 1
-[TIME]: 07/15/20 16:14:51 - Processing frame: Action took 1.493339s
-[INFO]: 07/15/20 16:14:51 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:51 - Action took 0.046875s
-[INFO]: 07/15/20 16:14:51 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:52 - Applying nms
-[INFO]: 07/15/20 16:14:52 - Tracking people 1
-[TIME]: 07/15/20 16:14:53 - Processing frame: Action took 1.850080s
-[INFO]: 07/15/20 16:14:53 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:53 - Action took 0.030920s
-[INFO]: 07/15/20 16:14:53 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:54 - Applying nms
-[INFO]: 07/15/20 16:14:54 - Tracking people 1
-[TIME]: 07/15/20 16:14:55 - Processing frame: Action took 1.898818s
-[INFO]: 07/15/20 16:14:55 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:55 - Action took 0.006983s
-[INFO]: 07/15/20 16:14:55 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:56 - Applying nms
-[INFO]: 07/15/20 16:14:56 - Tracking people 1
-[TIME]: 07/15/20 16:14:57 - Processing frame: Action took 1.495998s
-[INFO]: 07/15/20 16:14:57 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:14:57 - Action took 0.075798s
-[INFO]: 07/15/20 16:14:57 - Detecting People in the frame
-[INFO]: 07/15/20 16:14:57 - Applying nms
-[INFO]: 07/15/20 16:14:57 - Tracking people 1
-[TIME]: 07/15/20 16:15:00 - Processing frame: Action took 2.988064s
-[INFO]: 07/15/20 16:15:00 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:00 - Action took 0.029006s
-[INFO]: 07/15/20 16:15:00 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:00 - Applying nms
-[INFO]: 07/15/20 16:15:00 - Tracking people 1
-[TIME]: 07/15/20 16:15:02 - Processing frame: Action took 2.151242s
-[INFO]: 07/15/20 16:15:02 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:02 - Action took 0.047881s
-[INFO]: 07/15/20 16:15:02 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:02 - Applying nms
-[INFO]: 07/15/20 16:15:02 - Tracking people 1
-[TIME]: 07/15/20 16:15:04 - Processing frame: Action took 2.049337s
-[INFO]: 07/15/20 16:15:04 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:04 - Action took 0.002993s
-[INFO]: 07/15/20 16:15:04 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:04 - Applying nms
-[INFO]: 07/15/20 16:15:04 - Tracking people 1
-[TIME]: 07/15/20 16:15:06 - Processing frame: Action took 2.587817s
-[INFO]: 07/15/20 16:15:06 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:07 - Action took 0.043880s
-[INFO]: 07/15/20 16:15:07 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:07 - Applying nms
-[INFO]: 07/15/20 16:15:07 - Tracking people 1
-[TIME]: 07/15/20 16:15:09 - Processing frame: Action took 2.418276s
-[INFO]: 07/15/20 16:15:09 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:09 - Action took 0.038897s
-[INFO]: 07/15/20 16:15:09 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:09 - Applying nms
-[INFO]: 07/15/20 16:15:09 - Tracking people 1
-[TIME]: 07/15/20 16:15:11 - Processing frame: Action took 1.704393s
-[INFO]: 07/15/20 16:15:11 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:11 - Action took 0.031916s
-[INFO]: 07/15/20 16:15:11 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:11 - Applying nms
-[INFO]: 07/15/20 16:15:11 - Tracking people 1
-[TIME]: 07/15/20 16:15:13 - Processing frame: Action took 2.059225s
-[INFO]: 07/15/20 16:15:13 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:13 - Action took 0.047871s
-[INFO]: 07/15/20 16:15:13 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:13 - Applying nms
-[INFO]: 07/15/20 16:15:13 - Tracking people 1
-[TIME]: 07/15/20 16:15:15 - Processing frame: Action took 2.376043s
-[INFO]: 07/15/20 16:15:15 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:15 - Action took 0.023449s
-[INFO]: 07/15/20 16:15:15 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:16 - Applying nms
-[INFO]: 07/15/20 16:15:16 - Tracking people 1
-[TIME]: 07/15/20 16:15:16 - Processing frame: Action took 0.583920s
-[INFO]: 07/15/20 16:15:16 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:16 - Action took 0.024932s
-[INFO]: 07/15/20 16:15:16 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:16 - Applying nms
-[INFO]: 07/15/20 16:15:16 - Tracking people 1
-[TIME]: 07/15/20 16:15:18 - Processing frame: Action took 2.107982s
-[INFO]: 07/15/20 16:15:18 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:18 - Action took 0.036901s
-[INFO]: 07/15/20 16:15:18 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:18 - Applying nms
-[INFO]: 07/15/20 16:15:18 - Tracking people 1
-[TIME]: 07/15/20 16:15:22 - Processing frame: Action took 4.059049s
-[INFO]: 07/15/20 16:15:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:15:22 - Detecting People in the frame
-[TIME]: 07/15/20 16:15:22 - Action took 0.028922s
-[INFO]: 07/15/20 16:15:22 - Applying nms
-[INFO]: 07/15/20 16:15:22 - Tracking people 1
-[TIME]: 07/15/20 16:15:22 - Processing frame: Action took 0.604098s
-[INFO]: 07/15/20 16:15:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:23 - Action took 0.034939s
-[INFO]: 07/15/20 16:15:23 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:23 - Tracking people 1
-[INFO]: 07/15/20 16:15:23 - Applying nms
-[TIME]: 07/15/20 16:15:23 - Processing frame: Action took 0.688884s
-[INFO]: 07/15/20 16:15:23 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:23 - Action took 0.032909s
-[INFO]: 07/15/20 16:15:23 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:24 - Applying nms
-[INFO]: 07/15/20 16:15:24 - Tracking people 1
-[TIME]: 07/15/20 16:15:24 - Processing frame: Action took 0.736596s
-[INFO]: 07/15/20 16:15:24 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:24 - Action took 0.051860s
-[INFO]: 07/15/20 16:15:24 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:25 - Tracking people 1
-[INFO]: 07/15/20 16:15:25 - Applying nms
-[TIME]: 07/15/20 16:15:25 - Processing frame: Action took 0.817330s
-[INFO]: 07/15/20 16:15:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:25 - Action took 0.003989s
-[INFO]: 07/15/20 16:15:25 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:25 - Applying nms
-[INFO]: 07/15/20 16:15:25 - Tracking people 1
-[TIME]: 07/15/20 16:15:25 - Processing frame: Action took 0.578483s
-[INFO]: 07/15/20 16:15:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:15:25 - Detecting People in the frame
-[TIME]: 07/15/20 16:15:25 - Action took 0.050863s
-[INFO]: 07/15/20 16:15:26 - Applying nms
-[INFO]: 07/15/20 16:15:26 - Tracking people 1
-[TIME]: 07/15/20 16:15:26 - Processing frame: Action took 0.687161s
-[INFO]: 07/15/20 16:15:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:15:26 - Detecting People in the frame
-[TIME]: 07/15/20 16:15:26 - Action took 0.030918s
-[INFO]: 07/15/20 16:15:27 - Applying nms
-[INFO]: 07/15/20 16:15:27 - Tracking people 1
-[TIME]: 07/15/20 16:15:27 - Processing frame: Action took 0.771799s
-[INFO]: 07/15/20 16:15:27 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:27 - Action took 0.004987s
-[INFO]: 07/15/20 16:15:27 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:27 - Applying nms
-[INFO]: 07/15/20 16:15:27 - Tracking people 1
-[TIME]: 07/15/20 16:15:30 - Processing frame: Action took 2.937894s
-[INFO]: 07/15/20 16:15:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:30 - Action took 0.042886s
-[INFO]: 07/15/20 16:15:30 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:30 - Applying nms
-[INFO]: 07/15/20 16:15:30 - Tracking people 1
-[TIME]: 07/15/20 16:15:31 - Processing frame: Action took 1.739762s
-[INFO]: 07/15/20 16:15:31 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:15:32 - Detecting People in the frame
-[TIME]: 07/15/20 16:15:32 - Action took 0.037899s
-[INFO]: 07/15/20 16:15:32 - Applying nms
-[INFO]: 07/15/20 16:15:32 - Tracking people 1
-[TIME]: 07/15/20 16:15:34 - Processing frame: Action took 2.040015s
-[INFO]: 07/15/20 16:15:34 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:34 - Action took 0.059896s
-[INFO]: 07/15/20 16:15:34 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:34 - Applying nms
-[INFO]: 07/15/20 16:15:34 - Tracking people 1
-[TIME]: 07/15/20 16:15:36 - Processing frame: Action took 2.491938s
-[INFO]: 07/15/20 16:15:36 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:15:36 - Detecting People in the frame
-[TIME]: 07/15/20 16:15:36 - Action took 0.040891s
-[INFO]: 07/15/20 16:15:37 - Tracking people 1
-[INFO]: 07/15/20 16:15:37 - Applying nms
-[TIME]: 07/15/20 16:15:38 - Processing frame: Action took 1.528270s
-[INFO]: 07/15/20 16:15:38 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:38 - Action took 0.038851s
-[INFO]: 07/15/20 16:15:38 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:38 - Applying nms
-[INFO]: 07/15/20 16:15:38 - Tracking people 1
-[TIME]: 07/15/20 16:15:40 - Processing frame: Action took 2.377405s
-[INFO]: 07/15/20 16:15:40 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:40 - Action took 0.019946s
-[INFO]: 07/15/20 16:15:40 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:41 - Applying nms
-[INFO]: 07/15/20 16:15:41 - Tracking people 1
-[TIME]: 07/15/20 16:15:43 - Processing frame: Action took 2.773660s
-[INFO]: 07/15/20 16:15:43 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:15:43 - Detecting People in the frame
-[TIME]: 07/15/20 16:15:43 - Action took 0.055853s
-[INFO]: 07/15/20 16:15:43 - Applying nms
-[INFO]: 07/15/20 16:15:43 - Tracking people 1
-[TIME]: 07/15/20 16:15:45 - Processing frame: Action took 2.407422s
-[INFO]: 07/15/20 16:15:45 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:45 - Action took 0.047873s
-[INFO]: 07/15/20 16:15:45 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:46 - Applying nms
-[INFO]: 07/15/20 16:15:46 - Tracking people 1
-[TIME]: 07/15/20 16:15:49 - Processing frame: Action took 3.610564s
-[INFO]: 07/15/20 16:15:49 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:49 - Action took 0.044492s
-[INFO]: 07/15/20 16:15:49 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:50 - Applying nms
-[INFO]: 07/15/20 16:15:50 - Tracking people 1
-[TIME]: 07/15/20 16:15:50 - Processing frame: Action took 0.777302s
-[INFO]: 07/15/20 16:15:50 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:50 - Action took 0.057899s
-[INFO]: 07/15/20 16:15:50 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:50 - Applying nms
-[INFO]: 07/15/20 16:15:50 - Tracking people 1
-[TIME]: 07/15/20 16:15:50 - Processing frame: Action took 0.701695s
-[INFO]: 07/15/20 16:15:51 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:51 - Action took 0.062020s
-[INFO]: 07/15/20 16:15:51 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:51 - Applying nms
-[INFO]: 07/15/20 16:15:51 - Tracking people 1
-[TIME]: 07/15/20 16:15:51 - Processing frame: Action took 0.723004s
-[INFO]: 07/15/20 16:15:51 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:51 - Action took 0.031982s
-[INFO]: 07/15/20 16:15:51 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:52 - Applying nms
-[INFO]: 07/15/20 16:15:52 - Tracking people 1
-[TIME]: 07/15/20 16:15:52 - Processing frame: Action took 0.707983s
-[INFO]: 07/15/20 16:15:52 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:52 - Action took 0.039484s
-[INFO]: 07/15/20 16:15:52 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:53 - Applying nms
-[INFO]: 07/15/20 16:15:53 - Tracking people 1
-[TIME]: 07/15/20 16:15:53 - Processing frame: Action took 0.698072s
-[INFO]: 07/15/20 16:15:53 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:53 - Action took 0.051028s
-[INFO]: 07/15/20 16:15:53 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:53 - Applying nms
-[INFO]: 07/15/20 16:15:53 - Tracking people 1
-[TIME]: 07/15/20 16:15:53 - Processing frame: Action took 0.692985s
-[INFO]: 07/15/20 16:15:53 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:53 - Action took 0.006983s
-[INFO]: 07/15/20 16:15:53 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:54 - Applying nms
-[INFO]: 07/15/20 16:15:54 - Tracking people 1
-[TIME]: 07/15/20 16:15:56 - Processing frame: Action took 2.220225s
-[INFO]: 07/15/20 16:15:56 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:56 - Action took 0.049865s
-[INFO]: 07/15/20 16:15:56 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:56 - Applying nms
-[INFO]: 07/15/20 16:15:56 - Tracking people 1
-[TIME]: 07/15/20 16:15:58 - Processing frame: Action took 1.983932s
-[INFO]: 07/15/20 16:15:58 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:58 - Action took 0.055612s
-[INFO]: 07/15/20 16:15:58 - Detecting People in the frame
-[INFO]: 07/15/20 16:15:58 - Applying nms
-[INFO]: 07/15/20 16:15:58 - Tracking people 1
-[TIME]: 07/15/20 16:15:59 - Processing frame: Action took 1.670838s
-[INFO]: 07/15/20 16:15:59 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:15:59 - Action took 0.054851s
-[INFO]: 07/15/20 16:15:59 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:00 - Applying nms
-[INFO]: 07/15/20 16:16:00 - Tracking people 1
-[TIME]: 07/15/20 16:16:01 - Processing frame: Action took 1.779886s
-[INFO]: 07/15/20 16:16:01 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:16:01 - Detecting People in the frame
-[TIME]: 07/15/20 16:16:01 - Action took 0.043881s
-[INFO]: 07/15/20 16:16:02 - Applying nms
-[INFO]: 07/15/20 16:16:02 - Tracking people 1
-[TIME]: 07/15/20 16:16:03 - Processing frame: Action took 2.050130s
-[INFO]: 07/15/20 16:16:03 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:03 - Action took 0.032912s
-[INFO]: 07/15/20 16:16:03 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:04 - Tracking people 1
-[INFO]: 07/15/20 16:16:04 - Applying nms
-[TIME]: 07/15/20 16:16:05 - Processing frame: Action took 1.625423s
-[INFO]: 07/15/20 16:16:05 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:05 - Action took 0.039893s
-[INFO]: 07/15/20 16:16:05 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:05 - Applying nms
-[INFO]: 07/15/20 16:16:05 - Tracking people 1
-[TIME]: 07/15/20 16:16:07 - Processing frame: Action took 1.788036s
-[INFO]: 07/15/20 16:16:07 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:07 - Action took 0.027926s
-[INFO]: 07/15/20 16:16:07 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:07 - Applying nms
-[INFO]: 07/15/20 16:16:07 - Tracking people 1
-[TIME]: 07/15/20 16:16:10 - Processing frame: Action took 3.046835s
-[INFO]: 07/15/20 16:16:10 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:10 - Action took 0.044879s
-[INFO]: 07/15/20 16:16:10 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:10 - Tracking people 1
-[INFO]: 07/15/20 16:16:10 - Applying nms
-[TIME]: 07/15/20 16:16:14 - Processing frame: Action took 4.729177s
-[INFO]: 07/15/20 16:16:14 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:14 - Action took 0.061834s
-[INFO]: 07/15/20 16:16:14 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:15 - Applying nms
-[INFO]: 07/15/20 16:16:15 - Tracking people 1
-[TIME]: 07/15/20 16:16:15 - Processing frame: Action took 0.687298s
-[INFO]: 07/15/20 16:16:15 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:15 - Action took 0.008026s
-[INFO]: 07/15/20 16:16:15 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:16 - Applying nms
-[INFO]: 07/15/20 16:16:16 - Tracking people 1
-[TIME]: 07/15/20 16:16:16 - Processing frame: Action took 0.709981s
-[INFO]: 07/15/20 16:16:16 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:16 - Action took 0.040234s
-[INFO]: 07/15/20 16:16:16 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:17 - Applying nms
-[INFO]: 07/15/20 16:16:17 - Tracking people 1
-[TIME]: 07/15/20 16:16:17 - Processing frame: Action took 0.996911s
-[INFO]: 07/15/20 16:16:17 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:16:17 - Detecting People in the frame
-[TIME]: 07/15/20 16:16:17 - Action took 0.025981s
-[INFO]: 07/15/20 16:16:18 - Applying nms
-[INFO]: 07/15/20 16:16:18 - Tracking people 1
-[TIME]: 07/15/20 16:16:18 - Processing frame: Action took 0.945735s
-[INFO]: 07/15/20 16:16:18 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:16:18 - Detecting People in the frame
-[TIME]: 07/15/20 16:16:18 - Action took 0.037898s
-[INFO]: 07/15/20 16:16:19 - Applying nms
-[INFO]: 07/15/20 16:16:19 - Tracking people 1
-[TIME]: 07/15/20 16:16:19 - Processing frame: Action took 0.820805s
-[INFO]: 07/15/20 16:16:19 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:19 - Action took 0.003989s
-[INFO]: 07/15/20 16:16:19 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:19 - Applying nms
-[INFO]: 07/15/20 16:16:19 - Tracking people 1
-[TIME]: 07/15/20 16:16:19 - Processing frame: Action took 0.609371s
-[INFO]: 07/15/20 16:16:19 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:19 - Action took 0.004986s
-[INFO]: 07/15/20 16:16:19 - Detecting People in the frame
-[UPDATE]: 07/15/20 16:16:20 - Updating preprocessing values
-[FETCH]: 07/15/20 16:16:20 - fetching preprocessing values from web
-[INFO]: 07/15/20 16:16:20 - fetching info from web!
-[INFO]: 07/15/20 16:16:20 - Applying nms
-[INFO]: 07/15/20 16:16:20 - Tracking people 1
-[TIME]: 07/15/20 16:16:20 - Processing frame: Action took 0.854712s
-[INFO]: 07/15/20 16:16:20 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:20 - Action took 0.013963s
-[INFO]: 07/15/20 16:16:20 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:21 - Applying nms
-[INFO]: 07/15/20 16:16:21 - Tracking people 1
-[SUCC]: 07/15/20 16:16:21 - info recvd!
-[TIME]: 07/15/20 16:16:21 - Processing frame: Action took 0.945996s
-[INFO]: 07/15/20 16:16:22 - Applying nms
-[TIME]: 07/15/20 16:16:21 - Action took 0.005982s
-[INFO]: 07/15/20 16:16:21 - Detecting People in the frame
-[UPDATE]: 07/15/20 16:16:21 - Updating preprocessing values
-[INFO]: 07/15/20 16:16:22 - Tracking people 1
-[INFO]: 07/15/20 16:16:21 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:22 - Processing frame: Action took 0.794873s
-[INFO]: 07/15/20 16:16:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:22 - Action took 0.008981s
-[INFO]: 07/15/20 16:16:22 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:22 - Applying nms
-[INFO]: 07/15/20 16:16:22 - Tracking people 1
-[TIME]: 07/15/20 16:16:22 - Processing frame: Action took 0.576309s
-[INFO]: 07/15/20 16:16:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:22 - Action took 0.010064s
-[INFO]: 07/15/20 16:16:22 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:23 - Applying nms
-[INFO]: 07/15/20 16:16:23 - Tracking people 1
-[TIME]: 07/15/20 16:16:23 - Processing frame: Action took 0.647622s
-[INFO]: 07/15/20 16:16:23 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:23 - Action took 0.006981s
-[INFO]: 07/15/20 16:16:23 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:24 - Applying nms
-[INFO]: 07/15/20 16:16:24 - Tracking people 1
-[TIME]: 07/15/20 16:16:24 - Processing frame: Action took 0.692613s
-[INFO]: 07/15/20 16:16:24 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:24 - Action took 0.005983s
-[INFO]: 07/15/20 16:16:24 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:24 - Applying nms
-[INFO]: 07/15/20 16:16:24 - Tracking people 1
-[TIME]: 07/15/20 16:16:25 - Processing frame: Action took 0.689713s
-[INFO]: 07/15/20 16:16:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:25 - Action took 0.005983s
-[INFO]: 07/15/20 16:16:25 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:25 - Applying nms
-[INFO]: 07/15/20 16:16:25 - Tracking people 1
-[TIME]: 07/15/20 16:16:25 - Processing frame: Action took 0.600474s
-[INFO]: 07/15/20 16:16:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:25 - Action took 0.005985s
-[INFO]: 07/15/20 16:16:25 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:26 - Applying nms
-[INFO]: 07/15/20 16:16:26 - Tracking people 1
-[TIME]: 07/15/20 16:16:26 - Processing frame: Action took 0.602648s
-[INFO]: 07/15/20 16:16:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:26 - Action took 0.004984s
-[INFO]: 07/15/20 16:16:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:26 - Applying nms
-[INFO]: 07/15/20 16:16:26 - Tracking people 1
-[TIME]: 07/15/20 16:16:26 - Processing frame: Action took 0.529520s
-[INFO]: 07/15/20 16:16:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:26 - Action took 0.005985s
-[INFO]: 07/15/20 16:16:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:27 - Applying nms
-[INFO]: 07/15/20 16:16:27 - Tracking people 1
-[TIME]: 07/15/20 16:16:27 - Processing frame: Action took 0.609531s
-[INFO]: 07/15/20 16:16:27 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:27 - Action took 0.008117s
-[INFO]: 07/15/20 16:16:27 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:27 - Applying nms
-[INFO]: 07/15/20 16:16:27 - Tracking people 1
-[TIME]: 07/15/20 16:16:28 - Processing frame: Action took 0.686571s
-[INFO]: 07/15/20 16:16:28 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:28 - Action took 0.005983s
-[INFO]: 07/15/20 16:16:28 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:28 - Applying nms
-[INFO]: 07/15/20 16:16:28 - Tracking people 1
-[TIME]: 07/15/20 16:16:29 - Processing frame: Action took 1.865993s
-[INFO]: 07/15/20 16:16:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:30 - Action took 0.038896s
-[INFO]: 07/15/20 16:16:30 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:30 - Applying nms
-[INFO]: 07/15/20 16:16:30 - Tracking people 1
-[TIME]: 07/15/20 16:16:32 - Processing frame: Action took 2.000399s
-[INFO]: 07/15/20 16:16:32 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:32 - Action took 0.029920s
-[INFO]: 07/15/20 16:16:32 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:32 - Applying nms
-[INFO]: 07/15/20 16:16:32 - Tracking people 1
-[TIME]: 07/15/20 16:16:33 - Processing frame: Action took 1.236509s
-[INFO]: 07/15/20 16:16:33 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:33 - Action took 0.020944s
-[INFO]: 07/15/20 16:16:33 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:33 - Applying nms
-[INFO]: 07/15/20 16:16:33 - Tracking people 1
-[TIME]: 07/15/20 16:16:35 - Processing frame: Action took 2.041539s
-[INFO]: 07/15/20 16:16:35 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:35 - Action took 0.033919s
-[INFO]: 07/15/20 16:16:35 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:35 - Applying nms
-[INFO]: 07/15/20 16:16:35 - Tracking people 1
-[TIME]: 07/15/20 16:16:36 - Processing frame: Action took 1.679548s
-[INFO]: 07/15/20 16:16:37 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:37 - Action took 0.055849s
-[INFO]: 07/15/20 16:16:37 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:37 - Applying nms
-[INFO]: 07/15/20 16:16:37 - Tracking people 1
-[TIME]: 07/15/20 16:16:38 - Processing frame: Action took 1.675861s
-[INFO]: 07/15/20 16:16:38 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:38 - Action took 0.018951s
-[INFO]: 07/15/20 16:16:38 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:39 - Applying nms
-[TIME]: 07/15/20 16:16:39 - Processing frame: Action took 0.593446s
-[INFO]: 07/15/20 16:16:39 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:39 - Action took 0.028923s
-[INFO]: 07/15/20 16:16:39 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:39 - Applying nms
-[INFO]: 07/15/20 16:16:39 - Tracking people 1
-[TIME]: 07/15/20 16:16:41 - Processing frame: Action took 1.726219s
-[INFO]: 07/15/20 16:16:41 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:41 - Action took 0.047871s
-[INFO]: 07/15/20 16:16:41 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:41 - Applying nms
-[INFO]: 07/15/20 16:16:41 - Tracking people 1
-[TIME]: 07/15/20 16:16:44 - Processing frame: Action took 3.061959s
-[INFO]: 07/15/20 16:16:44 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:44 - Action took 0.030919s
-[INFO]: 07/15/20 16:16:44 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:44 - Applying nms
-[INFO]: 07/15/20 16:16:44 - Tracking people 1
-[TIME]: 07/15/20 16:16:44 - Processing frame: Action took 0.558021s
-[INFO]: 07/15/20 16:16:44 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:44 - Action took 0.049866s
-[INFO]: 07/15/20 16:16:44 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:45 - Applying nms
-[INFO]: 07/15/20 16:16:45 - Tracking people 1
-[TIME]: 07/15/20 16:16:45 - Processing frame: Action took 0.741018s
-[INFO]: 07/15/20 16:16:45 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:16:45 - Detecting People in the frame
-[TIME]: 07/15/20 16:16:45 - Action took 0.047872s
-[INFO]: 07/15/20 16:16:46 - Applying nms
-[INFO]: 07/15/20 16:16:46 - Tracking people 1
-[TIME]: 07/15/20 16:16:46 - Processing frame: Action took 0.696686s
-[INFO]: 07/15/20 16:16:46 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:46 - Action took 0.050863s
-[INFO]: 07/15/20 16:16:46 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:46 - Applying nms
-[INFO]: 07/15/20 16:16:46 - Tracking people 1
-[TIME]: 07/15/20 16:16:46 - Processing frame: Action took 0.557251s
-[INFO]: 07/15/20 16:16:46 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:46 - Action took 0.034905s
-[INFO]: 07/15/20 16:16:46 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:47 - Applying nms
-[INFO]: 07/15/20 16:16:47 - Tracking people 1
-[TIME]: 07/15/20 16:16:47 - Processing frame: Action took 0.798386s
-[INFO]: 07/15/20 16:16:47 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:47 - Action took 0.004986s
-[INFO]: 07/15/20 16:16:47 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:47 - Applying nms
-[INFO]: 07/15/20 16:16:47 - Tracking people 1
-[TIME]: 07/15/20 16:16:47 - Processing frame: Action took 0.424864s
-[INFO]: 07/15/20 16:16:47 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:47 - Action took 0.004951s
-[INFO]: 07/15/20 16:16:47 - Detecting People in the frame
-[TIME]: 07/15/20 16:16:48 - Action took 0.004988s
-[INFO]: 07/15/20 16:16:48 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:48 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:48 - Processing frame: Action took 0.347483s
-[INFO]: 07/15/20 16:16:48 - Applying nms
-[INFO]: 07/15/20 16:16:48 - Applying nms
-[INFO]: 07/15/20 16:16:48 - Tracking people 1
-[TIME]: 07/15/20 16:16:48 - Processing frame: Action took 0.387201s
-[INFO]: 07/15/20 16:16:48 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:48 - Action took 0.004987s
-[INFO]: 07/15/20 16:16:48 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:49 - Applying nms
-[INFO]: 07/15/20 16:16:49 - Tracking people 1
-[TIME]: 07/15/20 16:16:49 - Processing frame: Action took 0.716302s
-[INFO]: 07/15/20 16:16:49 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:49 - Action took 0.007978s
-[INFO]: 07/15/20 16:16:49 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:49 - Applying nms
-[INFO]: 07/15/20 16:16:49 - Tracking people 1
-[TIME]: 07/15/20 16:16:50 - Processing frame: Action took 0.727795s
-[INFO]: 07/15/20 16:16:50 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:50 - Action took 0.004987s
-[INFO]: 07/15/20 16:16:50 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:50 - Applying nms
-[INFO]: 07/15/20 16:16:50 - Tracking people 1
-[TIME]: 07/15/20 16:16:52 - Processing frame: Action took 1.914563s
-[INFO]: 07/15/20 16:16:52 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:52 - Action took 0.002993s
-[INFO]: 07/15/20 16:16:52 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:52 - Applying nms
-[INFO]: 07/15/20 16:16:52 - Tracking people 1
-[TIME]: 07/15/20 16:16:52 - Processing frame: Action took 0.382977s
-[INFO]: 07/15/20 16:16:52 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:52 - Action took 0.003991s
-[INFO]: 07/15/20 16:16:52 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:52 - Applying nms
-[INFO]: 07/15/20 16:16:52 - Tracking people 1
-[TIME]: 07/15/20 16:16:52 - Processing frame: Action took 0.317152s
-[INFO]: 07/15/20 16:16:52 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:52 - Action took 0.003989s
-[INFO]: 07/15/20 16:16:52 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:53 - Applying nms
-[INFO]: 07/15/20 16:16:53 - Tracking people 1
-[TIME]: 07/15/20 16:16:53 - Processing frame: Action took 0.465755s
-[INFO]: 07/15/20 16:16:53 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:53 - Action took 0.007977s
-[INFO]: 07/15/20 16:16:53 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:53 - Applying nms
-[INFO]: 07/15/20 16:16:53 - Tracking people 1
-[TIME]: 07/15/20 16:16:53 - Processing frame: Action took 0.377989s
-[INFO]: 07/15/20 16:16:53 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:53 - Action took 0.009973s
-[INFO]: 07/15/20 16:16:53 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:54 - Applying nms
-[INFO]: 07/15/20 16:16:54 - Tracking people 1
-[TIME]: 07/15/20 16:16:54 - Processing frame: Action took 0.454786s
-[INFO]: 07/15/20 16:16:54 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:54 - Action took 0.005985s
-[INFO]: 07/15/20 16:16:54 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:54 - Applying nms
-[INFO]: 07/15/20 16:16:54 - Tracking people 1
-[TIME]: 07/15/20 16:16:54 - Processing frame: Action took 0.446805s
-[INFO]: 07/15/20 16:16:54 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:54 - Action took 0.003990s
-[INFO]: 07/15/20 16:16:54 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:55 - Applying nms
-[INFO]: 07/15/20 16:16:55 - Tracking people 1
-[TIME]: 07/15/20 16:16:55 - Processing frame: Action took 0.481711s
-[INFO]: 07/15/20 16:16:55 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:55 - Action took 0.004987s
-[INFO]: 07/15/20 16:16:55 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:55 - Applying nms
-[INFO]: 07/15/20 16:16:55 - Tracking people 1
-[TIME]: 07/15/20 16:16:55 - Processing frame: Action took 0.501660s
-[INFO]: 07/15/20 16:16:55 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:55 - Action took 0.004988s
-[INFO]: 07/15/20 16:16:55 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:56 - Applying nms
-[INFO]: 07/15/20 16:16:56 - Tracking people 1
-[TIME]: 07/15/20 16:16:56 - Processing frame: Action took 0.469743s
-[INFO]: 07/15/20 16:16:56 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:56 - Action took 0.004987s
-[INFO]: 07/15/20 16:16:56 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:56 - Applying nms
-[INFO]: 07/15/20 16:16:56 - Tracking people 1
-[TIME]: 07/15/20 16:16:56 - Processing frame: Action took 0.487695s
-[INFO]: 07/15/20 16:16:56 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:56 - Action took 0.004987s
-[INFO]: 07/15/20 16:16:56 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:57 - Applying nms
-[INFO]: 07/15/20 16:16:57 - Tracking people 1
-[TIME]: 07/15/20 16:16:57 - Processing frame: Action took 0.465754s
-[INFO]: 07/15/20 16:16:57 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:57 - Action took 0.005984s
-[INFO]: 07/15/20 16:16:57 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:57 - Applying nms
-[INFO]: 07/15/20 16:16:57 - Tracking people 1
-[TIME]: 07/15/20 16:16:57 - Processing frame: Action took 0.618344s
-[INFO]: 07/15/20 16:16:57 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:57 - Action took 0.005984s
-[INFO]: 07/15/20 16:16:57 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:58 - Applying nms
-[INFO]: 07/15/20 16:16:58 - Tracking people 1
-[TIME]: 07/15/20 16:16:58 - Processing frame: Action took 0.573467s
-[INFO]: 07/15/20 16:16:58 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:58 - Action took 0.005984s
-[INFO]: 07/15/20 16:16:58 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:58 - Applying nms
-[INFO]: 07/15/20 16:16:58 - Tracking people 1
-[TIME]: 07/15/20 16:16:58 - Processing frame: Action took 0.598401s
-[INFO]: 07/15/20 16:16:58 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:58 - Action took 0.008976s
-[INFO]: 07/15/20 16:16:59 - Detecting People in the frame
-[INFO]: 07/15/20 16:16:59 - Applying nms
-[INFO]: 07/15/20 16:16:59 - Tracking people 1
-[TIME]: 07/15/20 16:16:59 - Processing frame: Action took 0.746006s
-[INFO]: 07/15/20 16:16:59 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:16:59 - Action took 0.004985s
-[INFO]: 07/15/20 16:16:59 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:00 - Applying nms
-[INFO]: 07/15/20 16:17:00 - Tracking people 1
-[TIME]: 07/15/20 16:17:00 - Processing frame: Action took 0.851721s
-[INFO]: 07/15/20 16:17:00 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:00 - Action took 0.005985s
-[INFO]: 07/15/20 16:17:00 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:01 - Applying nms
-[INFO]: 07/15/20 16:17:01 - Tracking people 1
-[TIME]: 07/15/20 16:17:01 - Processing frame: Action took 0.618345s
-[INFO]: 07/15/20 16:17:01 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:01 - Action took 0.003989s
-[INFO]: 07/15/20 16:17:01 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:01 - Applying nms
-[INFO]: 07/15/20 16:17:01 - Tracking people 1
-[TIME]: 07/15/20 16:17:01 - Processing frame: Action took 0.567000s
-[INFO]: 07/15/20 16:17:01 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:01 - Action took 0.006972s
-[INFO]: 07/15/20 16:17:01 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:02 - Applying nms
-[INFO]: 07/15/20 16:17:02 - Tracking people 1
-[TIME]: 07/15/20 16:17:02 - Processing frame: Action took 0.499664s
-[INFO]: 07/15/20 16:17:02 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:02 - Action took 0.008976s
-[INFO]: 07/15/20 16:17:02 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:02 - Applying nms
-[INFO]: 07/15/20 16:17:02 - Tracking people 1
-[TIME]: 07/15/20 16:17:03 - Processing frame: Action took 0.680320s
-[INFO]: 07/15/20 16:17:03 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:03 - Action took 0.003989s
-[INFO]: 07/15/20 16:17:03 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:03 - Applying nms
-[INFO]: 07/15/20 16:17:03 - Tracking people 1
-[TIME]: 07/15/20 16:17:04 - Processing frame: Action took 1.877380s
-[INFO]: 07/15/20 16:17:04 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:04 - Action took 0.004987s
-[INFO]: 07/15/20 16:17:04 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:05 - Tracking people 1
-[INFO]: 07/15/20 16:17:05 - Applying nms
-[TIME]: 07/15/20 16:17:05 - Processing frame: Action took 0.665879s
-[INFO]: 07/15/20 16:17:05 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:05 - Detecting People in the frame
-[TIME]: 07/15/20 16:17:05 - Action took 0.039994s
-[INFO]: 07/15/20 16:17:06 - Applying nms
-[INFO]: 07/15/20 16:17:06 - Tracking people 1
-[TIME]: 07/15/20 16:17:06 - Processing frame: Action took 0.736851s
-[INFO]: 07/15/20 16:17:06 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:06 - Action took 0.027924s
-[INFO]: 07/15/20 16:17:06 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:07 - Applying nms
-[INFO]: 07/15/20 16:17:07 - Tracking people 1
-[TIME]: 07/15/20 16:17:07 - Processing frame: Action took 0.708648s
-[INFO]: 07/15/20 16:17:07 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:07 - Action took 0.037418s
-[INFO]: 07/15/20 16:17:07 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:07 - Applying nms
-[INFO]: 07/15/20 16:17:07 - Tracking people 1
-[TIME]: 07/15/20 16:17:07 - Processing frame: Action took 0.650362s
-[INFO]: 07/15/20 16:17:07 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:07 - Detecting People in the frame
-[TIME]: 07/15/20 16:17:07 - Action took 0.035958s
-[INFO]: 07/15/20 16:17:08 - Applying nms
-[INFO]: 07/15/20 16:17:08 - Tracking people 1
-[TIME]: 07/15/20 16:17:08 - Processing frame: Action took 0.708189s
-[INFO]: 07/15/20 16:17:08 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:08 - Action took 0.033910s
-[INFO]: 07/15/20 16:17:08 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:09 - Applying nms
-[INFO]: 07/15/20 16:17:09 - Tracking people 1
-[TIME]: 07/15/20 16:17:09 - Processing frame: Action took 0.763966s
-[INFO]: 07/15/20 16:17:09 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:09 - Action took 0.005984s
-[INFO]: 07/15/20 16:17:09 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:09 - Applying nms
-[INFO]: 07/15/20 16:17:09 - Tracking people 1
-[TIME]: 07/15/20 16:17:09 - Processing frame: Action took 0.625561s
-[INFO]: 07/15/20 16:17:09 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:10 - Action took 0.038010s
-[INFO]: 07/15/20 16:17:10 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:10 - Applying nms
-[INFO]: 07/15/20 16:17:10 - Tracking people 1
-[TIME]: 07/15/20 16:17:11 - Processing frame: Action took 1.636111s
-[INFO]: 07/15/20 16:17:11 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:11 - Action took 0.027925s
-[INFO]: 07/15/20 16:17:11 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:12 - Applying nms
-[INFO]: 07/15/20 16:17:12 - Tracking people 1
-[TIME]: 07/15/20 16:17:13 - Processing frame: Action took 1.468091s
-[INFO]: 07/15/20 16:17:13 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:13 - Action took 0.022940s
-[INFO]: 07/15/20 16:17:13 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:13 - Tracking people 1
-[INFO]: 07/15/20 16:17:13 - Applying nms
-[TIME]: 07/15/20 16:17:14 - Processing frame: Action took 1.508519s
-[INFO]: 07/15/20 16:17:14 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:14 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:15 - Applying nms
-[INFO]: 07/15/20 16:17:15 - Tracking people 1
-[TIME]: 07/15/20 16:17:16 - Processing frame: Action took 1.859542s
-[INFO]: 07/15/20 16:17:16 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:16 - Action took 0.053858s
-[INFO]: 07/15/20 16:17:16 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:17 - Applying nms
-[INFO]: 07/15/20 16:17:17 - Tracking people 1
-[TIME]: 07/15/20 16:17:18 - Processing frame: Action took 1.628643s
-[INFO]: 07/15/20 16:17:18 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:18 - Action took 0.031915s
-[INFO]: 07/15/20 16:17:18 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:18 - Applying nms
-[INFO]: 07/15/20 16:17:18 - Tracking people 1
-[TIME]: 07/15/20 16:17:20 - Processing frame: Action took 1.940747s
-[INFO]: 07/15/20 16:17:20 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:20 - Detecting People in the frame
-[TIME]: 07/15/20 16:17:20 - Action took 0.042202s
-[INFO]: 07/15/20 16:17:21 - Applying nms
-[INFO]: 07/15/20 16:17:21 - Tracking people 1
-[TIME]: 07/15/20 16:17:22 - Processing frame: Action took 1.932940s
-[INFO]: 07/15/20 16:17:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:22 - Action took 0.044526s
-[INFO]: 07/15/20 16:17:22 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:23 - Applying nms
-[INFO]: 07/15/20 16:17:23 - Tracking people 1
-[TIME]: 07/15/20 16:17:24 - Processing frame: Action took 2.513738s
-[INFO]: 07/15/20 16:17:24 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:24 - Action took 0.027924s
-[INFO]: 07/15/20 16:17:24 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:25 - Applying nms
-[INFO]: 07/15/20 16:17:25 - Tracking people 1
-[TIME]: 07/15/20 16:17:28 - Processing frame: Action took 3.494391s
-[INFO]: 07/15/20 16:17:28 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:28 - Detecting People in the frame
-[TIME]: 07/15/20 16:17:28 - Action took 0.063983s
-[INFO]: 07/15/20 16:17:29 - Applying nms
-[INFO]: 07/15/20 16:17:29 - Tracking people 1
-[TIME]: 07/15/20 16:17:29 - Processing frame: Action took 0.978989s
-[INFO]: 07/15/20 16:17:29 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:29 - Action took 0.028030s
-[INFO]: 07/15/20 16:17:29 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:29 - Applying nms
-[INFO]: 07/15/20 16:17:29 - Tracking people 1
-[TIME]: 07/15/20 16:17:30 - Processing frame: Action took 0.899008s
-[INFO]: 07/15/20 16:17:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:30 - Action took 0.047072s
-[INFO]: 07/15/20 16:17:30 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:30 - Applying nms
-[INFO]: 07/15/20 16:17:30 - Tracking people 1
-[TIME]: 07/15/20 16:17:30 - Processing frame: Action took 0.710350s
-[INFO]: 07/15/20 16:17:30 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:30 - Detecting People in the frame
-[TIME]: 07/15/20 16:17:30 - Action took 0.044883s
-[INFO]: 07/15/20 16:17:31 - Applying nms
-[INFO]: 07/15/20 16:17:31 - Tracking people 1
-[TIME]: 07/15/20 16:17:31 - Processing frame: Action took 0.718529s
-[INFO]: 07/15/20 16:17:31 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:31 - Action took 0.031512s
-[INFO]: 07/15/20 16:17:31 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:32 - Applying nms
-[INFO]: 07/15/20 16:17:32 - Tracking people 1
-[TIME]: 07/15/20 16:17:32 - Processing frame: Action took 0.773867s
-[INFO]: 07/15/20 16:17:32 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:32 - Action took 0.005955s
-[INFO]: 07/15/20 16:17:32 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:32 - Applying nms
-[INFO]: 07/15/20 16:17:32 - Tracking people 1
-[TIME]: 07/15/20 16:17:32 - Processing frame: Action took 0.532031s
-[INFO]: 07/15/20 16:17:32 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:32 - Action took 0.005032s
-[INFO]: 07/15/20 16:17:32 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:33 - Applying nms
-[INFO]: 07/15/20 16:17:33 - Tracking people 1
-[TIME]: 07/15/20 16:17:33 - Processing frame: Action took 0.794962s
-[INFO]: 07/15/20 16:17:33 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:33 - Action took 0.005985s
-[INFO]: 07/15/20 16:17:33 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:34 - Applying nms
-[INFO]: 07/15/20 16:17:34 - Tracking people 1
-[TIME]: 07/15/20 16:17:34 - Processing frame: Action took 0.716040s
-[INFO]: 07/15/20 16:17:34 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:34 - Action took 0.005530s
-[INFO]: 07/15/20 16:17:34 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:34 - Applying nms
-[INFO]: 07/15/20 16:17:34 - Tracking people 1
-[TIME]: 07/15/20 16:17:35 - Processing frame: Action took 0.917076s
-[INFO]: 07/15/20 16:17:35 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:35 - Action took 0.007516s
-[INFO]: 07/15/20 16:17:35 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:35 - Applying nms
-[INFO]: 07/15/20 16:17:35 - Tracking people 1
-[TIME]: 07/15/20 16:17:35 - Processing frame: Action took 0.686005s
-[INFO]: 07/15/20 16:17:35 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:35 - Action took 0.007032s
-[INFO]: 07/15/20 16:17:36 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:36 - Applying nms
-[INFO]: 07/15/20 16:17:36 - Tracking people 1
-[TIME]: 07/15/20 16:17:36 - Processing frame: Action took 0.614943s
-[INFO]: 07/15/20 16:17:36 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:36 - Action took 0.007978s
-[INFO]: 07/15/20 16:17:36 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:37 - Applying nms
-[INFO]: 07/15/20 16:17:37 - Tracking people 1
-[TIME]: 07/15/20 16:17:37 - Processing frame: Action took 0.665917s
-[INFO]: 07/15/20 16:17:37 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:37 - Action took 0.020018s
-[INFO]: 07/15/20 16:17:37 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:37 - Applying nms
-[INFO]: 07/15/20 16:17:37 - Tracking people 1
-[TIME]: 07/15/20 16:17:38 - Processing frame: Action took 0.737835s
-[INFO]: 07/15/20 16:17:38 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:38 - Action took 0.005984s
-[INFO]: 07/15/20 16:17:38 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:38 - Applying nms
-[INFO]: 07/15/20 16:17:38 - Tracking people 1
-[TIME]: 07/15/20 16:17:38 - Processing frame: Action took 0.705922s
-[INFO]: 07/15/20 16:17:38 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:38 - Action took 0.021989s
-[INFO]: 07/15/20 16:17:38 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:39 - Applying nms
-[INFO]: 07/15/20 16:17:39 - Tracking people 1
-[TIME]: 07/15/20 16:17:39 - Processing frame: Action took 0.788208s
-[INFO]: 07/15/20 16:17:39 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:39 - Action took 0.007977s
-[INFO]: 07/15/20 16:17:39 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:40 - Applying nms
-[INFO]: 07/15/20 16:17:40 - Tracking people 1
-[TIME]: 07/15/20 16:17:40 - Processing frame: Action took 1.027037s
-[INFO]: 07/15/20 16:17:40 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:40 - Action took 0.008983s
-[INFO]: 07/15/20 16:17:40 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:41 - Applying nms
-[INFO]: 07/15/20 16:17:41 - Tracking people 1
-[TIME]: 07/15/20 16:17:41 - Processing frame: Action took 0.820903s
-[INFO]: 07/15/20 16:17:41 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:41 - Action took 0.003990s
-[INFO]: 07/15/20 16:17:41 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:42 - Applying nms
-[INFO]: 07/15/20 16:17:42 - Tracking people 1
-[TIME]: 07/15/20 16:17:43 - Processing frame: Action took 1.755670s
-[INFO]: 07/15/20 16:17:43 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:43 - Action took 0.032914s
-[INFO]: 07/15/20 16:17:43 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:43 - Applying nms
-[INFO]: 07/15/20 16:17:43 - Tracking people 1
-[TIME]: 07/15/20 16:17:44 - Processing frame: Action took 1.565919s
-[INFO]: 07/15/20 16:17:44 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:44 - Action took 0.037899s
-[INFO]: 07/15/20 16:17:45 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:45 - Applying nms
-[INFO]: 07/15/20 16:17:45 - Tracking people 1
-[TIME]: 07/15/20 16:17:46 - Processing frame: Action took 2.024720s
-[INFO]: 07/15/20 16:17:46 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:47 - Action took 0.039893s
-[INFO]: 07/15/20 16:17:47 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:47 - Applying nms
-[INFO]: 07/15/20 16:17:47 - Tracking people 1
-[TIME]: 07/15/20 16:17:48 - Processing frame: Action took 1.784658s
-[INFO]: 07/15/20 16:17:48 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:48 - Action took 0.056849s
-[INFO]: 07/15/20 16:17:48 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:49 - Applying nms
-[INFO]: 07/15/20 16:17:49 - Tracking people 1
-[TIME]: 07/15/20 16:17:51 - Processing frame: Action took 2.441253s
-[INFO]: 07/15/20 16:17:51 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:51 - Action took 0.031913s
-[INFO]: 07/15/20 16:17:51 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:51 - Tracking people 1
-[TIME]: 07/15/20 16:17:52 - Processing frame: Action took 1.178987s
-[INFO]: 07/15/20 16:17:52 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:52 - Action took 0.031914s
-[INFO]: 07/15/20 16:17:52 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:53 - Applying nms
-[INFO]: 07/15/20 16:17:53 - Tracking people 1
-[TIME]: 07/15/20 16:17:54 - Processing frame: Action took 1.914314s
-[INFO]: 07/15/20 16:17:54 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:17:54 - Detecting People in the frame
-[TIME]: 07/15/20 16:17:54 - Action took 0.038410s
-[INFO]: 07/15/20 16:17:54 - Applying nms
-[INFO]: 07/15/20 16:17:54 - Tracking people 1
-[TIME]: 07/15/20 16:17:56 - Processing frame: Action took 2.579612s
-[INFO]: 07/15/20 16:17:56 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:56 - Action took 0.027923s
-[INFO]: 07/15/20 16:17:56 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:57 - Applying nms
-[INFO]: 07/15/20 16:17:57 - Tracking people 1
-[TIME]: 07/15/20 16:17:57 - Processing frame: Action took 0.710330s
-[INFO]: 07/15/20 16:17:57 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:57 - Action took 0.039893s
-[INFO]: 07/15/20 16:17:57 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:58 - Applying nms
-[INFO]: 07/15/20 16:17:58 - Tracking people 1
-[TIME]: 07/15/20 16:17:58 - Processing frame: Action took 0.767754s
-[INFO]: 07/15/20 16:17:58 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:58 - Action took 0.042886s
-[INFO]: 07/15/20 16:17:58 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:59 - Applying nms
-[INFO]: 07/15/20 16:17:59 - Tracking people 1
-[TIME]: 07/15/20 16:17:59 - Processing frame: Action took 0.854232s
-[INFO]: 07/15/20 16:17:59 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:17:59 - Action took 0.044880s
-[INFO]: 07/15/20 16:17:59 - Detecting People in the frame
-[INFO]: 07/15/20 16:17:59 - Applying nms
-[INFO]: 07/15/20 16:17:59 - Tracking people 1
-[TIME]: 07/15/20 16:17:59 - Processing frame: Action took 0.673715s
-[INFO]: 07/15/20 16:18:00 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:00 - Action took 0.065825s
-[INFO]: 07/15/20 16:18:00 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:00 - Applying nms
-[TIME]: 07/15/20 16:18:00 - Processing frame: Action took 0.783904s
-[INFO]: 07/15/20 16:18:00 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:00 - Action took 0.039892s
-[INFO]: 07/15/20 16:18:00 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:01 - Applying nms
-[INFO]: 07/15/20 16:18:01 - Tracking people 1
-[TIME]: 07/15/20 16:18:01 - Processing frame: Action took 0.709103s
-[INFO]: 07/15/20 16:18:01 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:01 - Action took 0.078789s
-[INFO]: 07/15/20 16:18:01 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:02 - Applying nms
-[INFO]: 07/15/20 16:18:02 - Tracking people 1
-[TIME]: 07/15/20 16:18:03 - Processing frame: Action took 2.276908s
-[INFO]: 07/15/20 16:18:03 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:03 - Action took 0.003991s
-[INFO]: 07/15/20 16:18:03 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:04 - Applying nms
-[INFO]: 07/15/20 16:18:04 - Tracking people 1
-[TIME]: 07/15/20 16:18:06 - Processing frame: Action took 2.313494s
-[INFO]: 07/15/20 16:18:06 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:18:06 - Detecting People in the frame
-[TIME]: 07/15/20 16:18:06 - Action took 0.016956s
-[INFO]: 07/15/20 16:18:06 - Applying nms
-[INFO]: 07/15/20 16:18:06 - Tracking people 1
-[TIME]: 07/15/20 16:18:09 - Processing frame: Action took 3.371425s
-[INFO]: 07/15/20 16:18:09 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:09 - Action took 0.125664s
-[INFO]: 07/15/20 16:18:09 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:10 - Applying nms
-[INFO]: 07/15/20 16:18:10 - Tracking people 1
-[TIME]: 07/15/20 16:18:10 - Processing frame: Action took 0.807959s
-[INFO]: 07/15/20 16:18:10 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:10 - Action took 0.037894s
-[INFO]: 07/15/20 16:18:10 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:11 - Applying nms
-[INFO]: 07/15/20 16:18:11 - Tracking people 1
-[TIME]: 07/15/20 16:18:11 - Processing frame: Action took 0.755221s
-[INFO]: 07/15/20 16:18:11 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:11 - Action took 0.062832s
-[INFO]: 07/15/20 16:18:11 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:11 - Applying nms
-[INFO]: 07/15/20 16:18:11 - Tracking people 1
-[TIME]: 07/15/20 16:18:11 - Processing frame: Action took 0.711128s
-[INFO]: 07/15/20 16:18:11 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:11 - Action took 0.049868s
-[INFO]: 07/15/20 16:18:11 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:12 - Applying nms
-[INFO]: 07/15/20 16:18:12 - Tracking people 1
-[TIME]: 07/15/20 16:18:12 - Processing frame: Action took 0.696139s
-[INFO]: 07/15/20 16:18:12 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:12 - Action took 0.031917s
-[INFO]: 07/15/20 16:18:12 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:13 - Applying nms
-[INFO]: 07/15/20 16:18:13 - Tracking people 1
-[TIME]: 07/15/20 16:18:13 - Processing frame: Action took 0.709105s
-[INFO]: 07/15/20 16:18:13 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:13 - Action took 0.045878s
-[INFO]: 07/15/20 16:18:13 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:14 - Applying nms
-[INFO]: 07/15/20 16:18:14 - Tracking people 1
-[TIME]: 07/15/20 16:18:14 - Processing frame: Action took 0.745007s
-[INFO]: 07/15/20 16:18:14 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:14 - Action took 0.038894s
-[INFO]: 07/15/20 16:18:14 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:14 - Applying nms
-[INFO]: 07/15/20 16:18:14 - Tracking people 1
-[TIME]: 07/15/20 16:18:16 - Processing frame: Action took 2.137935s
-[INFO]: 07/15/20 16:18:16 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:16 - Action took 0.038903s
-[INFO]: 07/15/20 16:18:16 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:16 - Applying nms
-[INFO]: 07/15/20 16:18:16 - Tracking people 1
-[TIME]: 07/15/20 16:18:18 - Processing frame: Action took 1.879403s
-[INFO]: 07/15/20 16:18:18 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:18 - Action took 0.037966s
-[INFO]: 07/15/20 16:18:18 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:18 - Applying nms
-[INFO]: 07/15/20 16:18:18 - Tracking people 1
-[TIME]: 07/15/20 16:18:22 - Processing frame: Action took 4.022566s
-[INFO]: 07/15/20 16:18:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[INFO]: 07/15/20 16:18:22 - Detecting People in the frame
-[TIME]: 07/15/20 16:18:22 - Action took 0.055914s
-[INFO]: 07/15/20 16:18:22 - Applying nms
-[INFO]: 07/15/20 16:18:22 - Tracking people 1
-[TIME]: 07/15/20 16:18:22 - Processing frame: Action took 0.710012s
-[INFO]: 07/15/20 16:18:22 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:23 - Action took 0.048976s
-[INFO]: 07/15/20 16:18:23 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:23 - Applying nms
-[INFO]: 07/15/20 16:18:23 - Tracking people 1
-[TIME]: 07/15/20 16:18:23 - Processing frame: Action took 0.726555s
-[INFO]: 07/15/20 16:18:23 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:23 - Action took 0.040891s
-[INFO]: 07/15/20 16:18:23 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:24 - Applying nms
-[INFO]: 07/15/20 16:18:24 - Tracking people 1
-[TIME]: 07/15/20 16:18:24 - Processing frame: Action took 1.239684s
-[INFO]: 07/15/20 16:18:24 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:24 - Action took 0.007979s
-[INFO]: 07/15/20 16:18:24 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:25 - Applying nms
-[INFO]: 07/15/20 16:18:25 - Tracking people 1
-[TIME]: 07/15/20 16:18:25 - Processing frame: Action took 0.408906s
-[INFO]: 07/15/20 16:18:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:25 - Action took 0.005989s
-[INFO]: 07/15/20 16:18:25 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:25 - Applying nms
-[INFO]: 07/15/20 16:18:25 - Tracking people 1
-[TIME]: 07/15/20 16:18:25 - Processing frame: Action took 0.389957s
-[INFO]: 07/15/20 16:18:25 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:25 - Action took 0.005984s
-[INFO]: 07/15/20 16:18:25 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:26 - Applying nms
-[INFO]: 07/15/20 16:18:26 - Tracking people 1
-[TIME]: 07/15/20 16:18:26 - Processing frame: Action took 0.585435s
-[INFO]: 07/15/20 16:18:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:26 - Action took 0.005984s
-[INFO]: 07/15/20 16:18:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:26 - Applying nms
-[INFO]: 07/15/20 16:18:26 - Tracking people 1
-[TIME]: 07/15/20 16:18:26 - Processing frame: Action took 0.467748s
-[INFO]: 07/15/20 16:18:26 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:26 - Action took 0.003989s
-[INFO]: 07/15/20 16:18:26 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:27 - Applying nms
-[INFO]: 07/15/20 16:18:27 - Tracking people 1
-[TIME]: 07/15/20 16:18:27 - Processing frame: Action took 0.726260s
-[INFO]: 07/15/20 16:18:27 - Pre-Processing frame of camera: 5f0b65048dc4ae0017fa90ca
-[TIME]: 07/15/20 16:18:27 - Action took 0.005054s
-[INFO]: 07/15/20 16:18:27 - Detecting People in the frame
-[INFO]: 07/15/20 16:18:28 - Applying nms
-[INFO]: 07/15/20 16:18:28 - Tracking people 1
+[START]: 07/17/20 02:01:09 - Server started
+[INFO]: 07/17/20 02:01:09 - Loading Models
+[TIME]: 07/17/20 02:01:09 - Action took 0.161569s
+[INFO]: 07/17/20 02:01:09 - Loading config
+[SUCC]: 07/17/20 02:01:09 - Done loading
+[INFO]: 07/17/20 02:01:09 - fetching info from web!
+[SUCC]: 07/17/20 02:01:10 - info recvd!
+[INFO]: 07/17/20 02:01:10 - Loading suspects
+[SUCC]: 07/17/20 02:01:15 - Suspects loaded
+[INFO]: 07/17/20 02:01:15 - Loading cameras
+[INFO]: 07/17/20 02:01:15 - Opening video capture for camera 5f10afa2ea5ea2001740a0d1
+[SUCC]: 07/17/20 02:01:16 - Video Capture opened!
+[SUCC]: 07/17/20 02:01:16 - Cameras loaded
+[UPDATE]: 07/17/20 02:01:16 - Updating preprocessing values
+[INFO]: 07/17/20 02:01:16 - Starting processing frames - thread
+[INFO]: 07/17/20 02:01:16 - Started processing frames
+[INFO]: 07/17/20 02:01:16 - Starting web server
+[INFO]: 07/17/20 02:01:16 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:17 - Applying nms
+[INFO]: 07/17/20 02:01:17 - Tracking people 5
+[TIME]: 07/17/20 02:01:19 - Processing frame: Action took 2.917395s
+[INFO]: 07/17/20 02:01:19 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:19 - Applying nms
+[INFO]: 07/17/20 02:01:19 - Tracking people 7
+[TIME]: 07/17/20 02:01:25 - Processing frame: Action took 5.899499s
+[INFO]: 07/17/20 02:01:25 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:25 - Applying nms
+[INFO]: 07/17/20 02:01:25 - Tracking people 7
+[TIME]: 07/17/20 02:01:26 - Processing frame: Action took 1.231564s
+[INFO]: 07/17/20 02:01:26 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:26 - Applying nms
+[INFO]: 07/17/20 02:01:26 - Tracking people 7
+[TIME]: 07/17/20 02:01:29 - Processing frame: Action took 2.870028s
+[INFO]: 07/17/20 02:01:29 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:29 - Applying nms
+[INFO]: 07/17/20 02:01:29 - Tracking people 7
+[HAP]: 07/17/20 02:01:33 - Value changed
+[TIME]: 07/17/20 02:01:34 - Processing frame: Action took 5.396003s
+[INFO]: 07/17/20 02:01:35 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:35 - Applying nms
+[INFO]: 07/17/20 02:01:35 - Tracking people 7
+[TIME]: 07/17/20 02:01:40 - Processing frame: Action took 5.459709s
+[INFO]: 07/17/20 02:01:40 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:40 - Applying nms
+[INFO]: 07/17/20 02:01:40 - Tracking people 7
+[TIME]: 07/17/20 02:01:54 - Processing frame: Action took 13.931446s
+[INFO]: 07/17/20 02:01:54 - Detecting People in the frame
+[INFO]: 07/17/20 02:01:54 - Applying nms
+[INFO]: 07/17/20 02:01:54 - Tracking people 6
+[TIME]: 07/17/20 02:02:04 - Processing frame: Action took 10.199142s
+[INFO]: 07/17/20 02:02:04 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:04 - Applying nms
+[INFO]: 07/17/20 02:02:04 - Tracking people 4
+[TIME]: 07/17/20 02:02:11 - Processing frame: Action took 6.795421s
+[INFO]: 07/17/20 02:02:11 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:12 - Applying nms
+[INFO]: 07/17/20 02:02:12 - Tracking people 4
+[TIME]: 07/17/20 02:02:21 - Processing frame: Action took 10.906420s
+[INFO]: 07/17/20 02:02:22 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:22 - Applying nms
+[INFO]: 07/17/20 02:02:22 - Tracking people 4
+[TIME]: 07/17/20 02:02:28 - Processing frame: Action took 7.048066s
+[INFO]: 07/17/20 02:02:29 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:29 - Applying nms
+[INFO]: 07/17/20 02:02:29 - Tracking people 3
+[TIME]: 07/17/20 02:02:30 - Processing frame: Action took 1.136032s
+[INFO]: 07/17/20 02:02:30 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:30 - Tracking people 4
+[INFO]: 07/17/20 02:02:30 - Applying nms
+[TIME]: 07/17/20 02:02:33 - Processing frame: Action took 3.704027s
+[INFO]: 07/17/20 02:02:34 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:34 - Applying nms
+[INFO]: 07/17/20 02:02:34 - Tracking people 4
+[TIME]: 07/17/20 02:02:36 - Processing frame: Action took 2.144370s
+[INFO]: 07/17/20 02:02:36 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:36 - Applying nms
+[INFO]: 07/17/20 02:02:36 - Tracking people 4
+[TIME]: 07/17/20 02:02:37 - Processing frame: Action took 1.616426s
+[INFO]: 07/17/20 02:02:37 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:38 - Applying nms
+[INFO]: 07/17/20 02:02:38 - Tracking people 4
+[TIME]: 07/17/20 02:02:39 - Processing frame: Action took 1.562995s
+[INFO]: 07/17/20 02:02:39 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:39 - Applying nms
+[INFO]: 07/17/20 02:02:39 - Tracking people 4
+[TIME]: 07/17/20 02:02:40 - Processing frame: Action took 1.096791s
+[INFO]: 07/17/20 02:02:40 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:40 - Applying nms
+[INFO]: 07/17/20 02:02:40 - Tracking people 4
+[TIME]: 07/17/20 02:02:42 - Processing frame: Action took 2.420906s
+[INFO]: 07/17/20 02:02:43 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:43 - Applying nms
+[INFO]: 07/17/20 02:02:43 - Tracking people 4
+[TIME]: 07/17/20 02:02:45 - Processing frame: Action took 2.782750s
+[INFO]: 07/17/20 02:02:45 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:46 - Applying nms
+[INFO]: 07/17/20 02:02:46 - Tracking people 3
+[TIME]: 07/17/20 02:02:47 - Processing frame: Action took 2.020285s
+[INFO]: 07/17/20 02:02:47 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:48 - Applying nms
+[INFO]: 07/17/20 02:02:48 - Tracking people 4
+[TIME]: 07/17/20 02:02:50 - Processing frame: Action took 2.945330s
+[INFO]: 07/17/20 02:02:50 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:51 - Applying nms
+[INFO]: 07/17/20 02:02:51 - Tracking people 4
+[TIME]: 07/17/20 02:02:52 - Processing frame: Action took 2.024425s
+[INFO]: 07/17/20 02:02:52 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:53 - Applying nms
+[INFO]: 07/17/20 02:02:53 - Tracking people 4
+[TIME]: 07/17/20 02:02:57 - Processing frame: Action took 5.247418s
+[INFO]: 07/17/20 02:02:58 - Detecting People in the frame
+[INFO]: 07/17/20 02:02:58 - Applying nms
+[INFO]: 07/17/20 02:02:58 - Tracking people 4
+[TIME]: 07/17/20 02:03:05 - Processing frame: Action took 7.948784s
+[INFO]: 07/17/20 02:03:06 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:06 - Applying nms
+[INFO]: 07/17/20 02:03:06 - Tracking people 5
+[TIME]: 07/17/20 02:03:10 - Processing frame: Action took 4.668248s
+[INFO]: 07/17/20 02:03:10 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:11 - Applying nms
+[INFO]: 07/17/20 02:03:11 - Tracking people 5
+[TIME]: 07/17/20 02:03:14 - Processing frame: Action took 4.563449s
+[INFO]: 07/17/20 02:03:15 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:15 - Applying nms
+[INFO]: 07/17/20 02:03:15 - Tracking people 7
+[TIME]: 07/17/20 02:03:21 - Processing frame: Action took 6.252542s
+[INFO]: 07/17/20 02:03:21 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:22 - Applying nms
+[INFO]: 07/17/20 02:03:22 - Tracking people 7
+[TIME]: 07/17/20 02:03:29 - Processing frame: Action took 8.347968s
+[INFO]: 07/17/20 02:03:29 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:30 - Applying nms
+[INFO]: 07/17/20 02:03:30 - Tracking people 7
+[TIME]: 07/17/20 02:03:35 - Processing frame: Action took 6.446041s
+[INFO]: 07/17/20 02:03:36 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:36 - Applying nms
+[INFO]: 07/17/20 02:03:36 - Tracking people 7
+[TIME]: 07/17/20 02:03:42 - Processing frame: Action took 6.213964s
+[INFO]: 07/17/20 02:03:42 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:43 - Applying nms
+[INFO]: 07/17/20 02:03:43 - Tracking people 7
+[TIME]: 07/17/20 02:03:56 - Processing frame: Action took 13.937931s
+[INFO]: 07/17/20 02:03:56 - Detecting People in the frame
+[INFO]: 07/17/20 02:03:56 - Applying nms
+[INFO]: 07/17/20 02:03:56 - Tracking people 7
+[TIME]: 07/17/20 02:04:07 - Processing frame: Action took 11.803634s
+[INFO]: 07/17/20 02:04:08 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:08 - Applying nms
+[INFO]: 07/17/20 02:04:08 - Tracking people 4
+[TIME]: 07/17/20 02:04:14 - Processing frame: Action took 6.082099s
+[INFO]: 07/17/20 02:04:14 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:14 - Applying nms
+[INFO]: 07/17/20 02:04:14 - Tracking people 4
+[TIME]: 07/17/20 02:04:22 - Processing frame: Action took 8.856129s
+[INFO]: 07/17/20 02:04:23 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:23 - Applying nms
+[INFO]: 07/17/20 02:04:23 - Tracking people 4
+[TIME]: 07/17/20 02:04:29 - Processing frame: Action took 6.770076s
+[INFO]: 07/17/20 02:04:29 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:30 - Applying nms
+[INFO]: 07/17/20 02:04:30 - Tracking people 3
+[TIME]: 07/17/20 02:04:34 - Processing frame: Action took 4.557018s
+[INFO]: 07/17/20 02:04:34 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:34 - Applying nms
+[INFO]: 07/17/20 02:04:34 - Tracking people 4
+[TIME]: 07/17/20 02:04:38 - Processing frame: Action took 4.642774s
+[INFO]: 07/17/20 02:04:39 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:39 - Applying nms
+[INFO]: 07/17/20 02:04:39 - Tracking people 4
+[TIME]: 07/17/20 02:04:40 - Processing frame: Action took 1.905369s
+[INFO]: 07/17/20 02:04:40 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:41 - Applying nms
+[INFO]: 07/17/20 02:04:41 - Tracking people 4
+[TIME]: 07/17/20 02:04:42 - Processing frame: Action took 1.938781s
+[INFO]: 07/17/20 02:04:42 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:43 - Tracking people 4
+[INFO]: 07/17/20 02:04:43 - Applying nms
+[TIME]: 07/17/20 02:04:44 - Processing frame: Action took 1.582768s
+[INFO]: 07/17/20 02:04:44 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:44 - Applying nms
+[INFO]: 07/17/20 02:04:44 - Tracking people 4
+[TIME]: 07/17/20 02:04:46 - Processing frame: Action took 2.108660s
+[INFO]: 07/17/20 02:04:46 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:46 - Applying nms
+[INFO]: 07/17/20 02:04:46 - Tracking people 4
+[TIME]: 07/17/20 02:04:48 - Processing frame: Action took 1.888208s
+[INFO]: 07/17/20 02:04:48 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:48 - Applying nms
+[INFO]: 07/17/20 02:04:48 - Tracking people 4
+[TIME]: 07/17/20 02:04:50 - Processing frame: Action took 1.929027s
+[INFO]: 07/17/20 02:04:50 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:50 - Applying nms
+[INFO]: 07/17/20 02:04:50 - Tracking people 4
+[TIME]: 07/17/20 02:04:52 - Processing frame: Action took 1.923164s
+[INFO]: 07/17/20 02:04:52 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:52 - Applying nms
+[INFO]: 07/17/20 02:04:52 - Tracking people 4
+[TIME]: 07/17/20 02:04:54 - Processing frame: Action took 1.939785s
+[INFO]: 07/17/20 02:04:54 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:54 - Tracking people 6
+[INFO]: 07/17/20 02:04:54 - Applying nms
+[TIME]: 07/17/20 02:04:55 - Processing frame: Action took 1.914975s
+[INFO]: 07/17/20 02:04:56 - Detecting People in the frame
+[INFO]: 07/17/20 02:04:56 - Applying nms
+[INFO]: 07/17/20 02:04:56 - Tracking people 6
+[TIME]: 07/17/20 02:05:01 - Processing frame: Action took 5.560231s
+[INFO]: 07/17/20 02:05:01 - Detecting People in the frame
+[INFO]: 07/17/20 02:05:02 - Applying nms
+[INFO]: 07/17/20 02:05:02 - Tracking people 6
+[TIME]: 07/17/20 02:05:08 - Processing frame: Action took 6.724027s
+[INFO]: 07/17/20 02:05:08 - Detecting People in the frame
+[INFO]: 07/17/20 02:05:08 - Applying nms
+[INFO]: 07/17/20 02:05:08 - Tracking people 5
+[TIME]: 07/17/20 02:05:12 - Processing frame: Action took 4.129227s
+[INFO]: 07/17/20 02:05:12 - Detecting People in the frame
+[INFO]: 07/17/20 02:05:13 - Applying nms
+[INFO]: 07/17/20 02:05:13 - Tracking people 7
+[TIME]: 07/17/20 02:05:16 - Processing frame: Action took 4.266855s
+[INFO]: 07/17/20 02:05:17 - Detecting People in the frame
+[INFO]: 07/17/20 02:05:17 - Applying nms
+[INFO]: 07/17/20 02:05:17 - Tracking people 7
+[TIME]: 07/17/20 02:05:22 - Processing frame: Action took 5.646379s
+[INFO]: 07/17/20 02:05:22 - Detecting People in the frame
+[INFO]: 07/17/20 02:05:23 - Applying nms
+[INFO]: 07/17/20 02:05:23 - Tracking people 7
+[INFO]: 07/17/20 02:05:23 - Stopping processing frames - thread
+[TIME]: 07/17/20 02:05:29 - Processing frame: Action took 6.834340s
+[INFO]: 07/17/20 02:05:29 - Stopped processing frames
+[START]: 07/17/20 05:49:43 - Server started
+[INFO]: 07/17/20 05:49:43 - Loading Models
+[TIME]: 07/17/20 05:49:43 - Action took 0.080785s
+[INFO]: 07/17/20 05:49:43 - Loading config
+[SUCC]: 07/17/20 05:49:43 - Done loading
+[INFO]: 07/17/20 05:49:43 - fetching info from web!
+[SUCC]: 07/17/20 05:50:01 - info recvd!
+[INFO]: 07/17/20 05:50:01 - Loading suspects
+[START]: 07/17/20 05:50:34 - Server started
+[INFO]: 07/17/20 05:50:34 - Loading Models
+[TIME]: 07/17/20 05:50:34 - Action took 0.078790s
+[INFO]: 07/17/20 05:50:34 - Loading config
+[SUCC]: 07/17/20 05:50:34 - Done loading
+[INFO]: 07/17/20 05:50:34 - fetching info from web!
+[SUCC]: 07/17/20 05:50:35 - info recvd!
+[INFO]: 07/17/20 05:50:35 - Loading suspects
+[DOWN]: 07/17/20 05:50:40 - picture-1594931638096.png
+[SUCC]: 07/17/20 05:50:41 - suspect_pictures/picture-1594931638096.png downloaded
+[DOWN]: 07/17/20 05:50:41 - picture-1594931663622.png
+[SUCC]: 07/17/20 05:50:42 - suspect_pictures/picture-1594931663622.png downloaded
+[SUCC]: 07/17/20 05:50:43 - Suspects loaded
+[INFO]: 07/17/20 05:50:43 - Loading cameras
+[CONN]: 07/17/20 05:50:43 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 05:50:43 - done
+[SUCC]: 07/17/20 05:50:43 - Cameras loaded
+[UPDATE]: 07/17/20 05:50:43 - Updating preprocessing values
+[INFO]: 07/17/20 05:50:43 - Starting processing frames - thread
+[INFO]: 07/17/20 05:50:43 - Started processing frames
+[INFO]: 07/17/20 05:50:43 - Starting web server
+[TIME]: 07/17/20 05:50:44 - Processing frame: Action took 0.724064s
+[TIME]: 07/17/20 05:50:45 - Processing frame: Action took 0.559504s
+[TIME]: 07/17/20 05:50:45 - Processing frame: Action took 0.495675s
+[TIME]: 07/17/20 05:50:46 - Processing frame: Action took 0.562496s
+[TIME]: 07/17/20 05:50:46 - Processing frame: Action took 0.544544s
+[TIME]: 07/17/20 05:50:47 - Processing frame: Action took 0.562496s
+[TIME]: 07/17/20 05:50:47 - Processing frame: Action took 0.484704s
+[TIME]: 07/17/20 05:50:48 - Processing frame: Action took 0.520607s
+[TIME]: 07/17/20 05:50:49 - Processing frame: Action took 1.325460s
+[START]: 07/17/20 05:55:23 - Server started
+[INFO]: 07/17/20 05:55:23 - Loading Models
+[TIME]: 07/17/20 05:55:23 - Action took 0.077790s
+[INFO]: 07/17/20 05:55:23 - Loading config
+[SUCC]: 07/17/20 05:55:23 - Done loading
+[INFO]: 07/17/20 05:55:23 - fetching info from web!
+[SUCC]: 07/17/20 05:55:24 - info recvd!
+[INFO]: 07/17/20 05:55:24 - Loading suspects
+[SUCC]: 07/17/20 05:55:26 - Suspects loaded
+[INFO]: 07/17/20 05:55:26 - Loading cameras
+[CONN]: 07/17/20 05:55:26 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 05:55:27 - done
+[SUCC]: 07/17/20 05:55:27 - Cameras loaded
+[UPDATE]: 07/17/20 05:55:27 - Updating preprocessing values
+[INFO]: 07/17/20 05:55:27 - Starting processing frames - thread
+[INFO]: 07/17/20 05:55:27 - Started processing frames
+[INFO]: 07/17/20 05:55:27 - Starting web server
+[TIME]: 07/17/20 05:55:30 - Processing frame: Action took 2.871051s
+[TIME]: 07/17/20 05:55:33 - Processing frame: Action took 3.158428s
+[TIME]: 07/17/20 05:55:34 - Processing frame: Action took 1.753309s
+[TIME]: 07/17/20 05:55:36 - Processing frame: Action took 1.218742s
+[TIME]: 07/17/20 05:55:37 - Processing frame: Action took 1.111029s
+[TIME]: 07/17/20 05:55:39 - Processing frame: Action took 2.401579s
+[TIME]: 07/17/20 05:55:43 - Processing frame: Action took 3.745984s
+[HAP]: 07/17/20 05:55:48 - Value changed
+[TIME]: 07/17/20 05:55:56 - Processing frame: Action took 13.234816s
+[START]: 07/17/20 05:56:45 - Server started
+[INFO]: 07/17/20 05:56:46 - Loading Models
+[TIME]: 07/17/20 05:56:46 - Action took 0.204452s
+[INFO]: 07/17/20 05:56:46 - Loading config
+[SUCC]: 07/17/20 05:56:46 - Done loading
+[INFO]: 07/17/20 05:56:46 - fetching info from web!
+[INFO]: 07/17/20 05:56:47 - Loading suspects
+[SUCC]: 07/17/20 05:56:54 - Suspects loaded
+[INFO]: 07/17/20 05:56:54 - Loading cameras
+[CONN]: 07/17/20 05:56:54 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 05:57:12 - done
+[SUCC]: 07/17/20 05:57:12 - Cameras loaded
+[UPDATE]: 07/17/20 05:57:12 - Updating preprocessing values
+[INFO]: 07/17/20 05:57:12 - Starting processing frames - thread
+[INFO]: 07/17/20 05:57:12 - Started processing frames
+[CONN]: 07/17/20 05:57:12 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[INFO]: 07/17/20 05:57:12 - Starting web server
+[DONE]: 07/17/20 05:57:29 - done
+[CONN]: 07/17/20 05:57:29 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 05:57:47 - done
+[CONN]: 07/17/20 05:57:47 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 05:58:04 - done
+[CONN]: 07/17/20 05:58:04 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 05:58:22 - done
+[CONN]: 07/17/20 05:58:22 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[INFO]: 07/17/20 05:58:23 - Stopping processing frames - thread
+[DONE]: 07/17/20 05:58:39 - done
+[INFO]: 07/17/20 05:58:39 - Stopped processing frames
+[START]: 07/17/20 06:00:04 - Server started
+[INFO]: 07/17/20 06:00:04 - Loading Models
+[TIME]: 07/17/20 06:00:04 - Action took 0.376993s
+[INFO]: 07/17/20 06:00:04 - Loading config
+[INFO]: 07/17/20 06:00:05 - fetching info from web!
+[SUCC]: 07/17/20 06:00:04 - Done loading
+[SUCC]: 07/17/20 06:00:06 - info recvd!
+[INFO]: 07/17/20 06:00:07 - Loading suspects
+[SUCC]: 07/17/20 06:00:21 - Suspects loaded
+[CONN]: 07/17/20 06:00:21 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[INFO]: 07/17/20 06:00:21 - Loading cameras
+[DONE]: 07/17/20 06:00:39 - done
+[SUCC]: 07/17/20 06:00:39 - Cameras loaded
+[INFO]: 07/17/20 06:00:39 - Starting processing frames - thread
+[UPDATE]: 07/17/20 06:00:39 - Updating preprocessing values
+[INFO]: 07/17/20 06:00:39 - Started processing frames
+[INFO]: 07/17/20 06:00:39 - Starting web server
+[CONN]: 07/17/20 06:00:39 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:00:56 - done
+[CONN]: 07/17/20 06:00:57 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[CONN]: 07/17/20 06:01:14 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:01:14 - done
+[DONE]: 07/17/20 06:01:31 - done
+[CONN]: 07/17/20 06:01:31 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[CONN]: 07/17/20 06:01:49 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:02:06 - done
+[CONN]: 07/17/20 06:02:06 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:02:24 - done
+[CONN]: 07/17/20 06:02:24 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:02:41 - done
+[CONN]: 07/17/20 06:02:41 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:02:59 - done
+[CONN]: 07/17/20 06:02:59 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[CONN]: 07/17/20 06:03:16 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:03:16 - done
+[DONE]: 07/17/20 06:03:34 - done
+[CONN]: 07/17/20 06:03:34 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:03:34 - done
+[TIME]: 07/17/20 06:03:39 - Processing frame: Action took 4.428214s
+[TIME]: 07/17/20 06:03:44 - Processing frame: Action took 5.162259s
+[HAP]: 07/17/20 06:03:48 - Value changed
+[TIME]: 07/17/20 06:03:51 - Processing frame: Action took 6.753944s
+[TIME]: 07/17/20 06:03:57 - Processing frame: Action took 6.235384s
+[TIME]: 07/17/20 06:04:04 - Processing frame: Action took 7.243906s
+[TIME]: 07/17/20 06:04:12 - Processing frame: Action took 7.791470s
+[TIME]: 07/17/20 06:04:20 - Processing frame: Action took 8.537574s
+[TIME]: 07/17/20 06:04:31 - Processing frame: Action took 10.160412s
+[TIME]: 07/17/20 06:04:44 - Processing frame: Action took 13.415090s
+[TIME]: 07/17/20 06:04:57 - Processing frame: Action took 12.918383s
+[TIME]: 07/17/20 06:05:10 - Processing frame: Action took 13.133072s
+[TIME]: 07/17/20 06:05:25 - Processing frame: Action took 14.742431s
+[TIME]: 07/17/20 06:05:41 - Processing frame: Action took 15.967336s
+[TIME]: 07/17/20 06:05:55 - Processing frame: Action took 13.717186s
+[TIME]: 07/17/20 06:06:07 - Processing frame: Action took 12.245711s
+[TIME]: 07/17/20 06:06:15 - Processing frame: Action took 8.346375s
+[HAP]: 07/17/20 06:06:18 - Value changed
+[CONN]: 07/17/20 06:06:21 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:06:39 - done
+[CONN]: 07/17/20 06:06:39 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[INFO]: 07/17/20 06:06:47 - Stopping processing frames - thread
+[DONE]: 07/17/20 06:06:56 - done
+[INFO]: 07/17/20 06:06:56 - Stopped processing frames
+[INFO]: 07/17/20 06:18:41 - Loading Models
+[START]: 07/17/20 06:18:41 - Server started
+[TIME]: 07/17/20 06:18:41 - Action took 0.376684s
+[INFO]: 07/17/20 06:18:41 - Loading config
+[SUCC]: 07/17/20 06:18:41 - Done loading
+[INFO]: 07/17/20 06:18:41 - fetching info from web!
+[SUCC]: 07/17/20 06:18:44 - info recvd!
+[INFO]: 07/17/20 06:18:44 - Loading suspects
+[START]: 07/17/20 06:21:27 - Server started
+[INFO]: 07/17/20 06:21:27 - Loading Models
+[START]: 07/17/20 06:21:44 - Server started
+[INFO]: 07/17/20 06:21:44 - Loading Models
+[TIME]: 07/17/20 06:21:44 - Action took 0.081782s
+[INFO]: 07/17/20 06:21:44 - Loading config
+[SUCC]: 07/17/20 06:21:44 - Done loading
+[INFO]: 07/17/20 06:21:44 - fetching info from web!
+[SUCC]: 07/17/20 06:21:45 - info recvd!
+[INFO]: 07/17/20 06:21:45 - Loading suspects
+[SUCC]: 07/17/20 06:21:49 - Suspects loaded
+[INFO]: 07/17/20 06:21:49 - Loading cameras
+[CONN]: 07/17/20 06:21:49 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:21:49 - done
+[SUCC]: 07/17/20 06:21:49 - Cameras loaded
+[UPDATE]: 07/17/20 06:21:49 - Updating preprocessing values
+[INFO]: 07/17/20 06:21:49 - Starting processing frames - thread
+[INFO]: 07/17/20 06:21:49 - Started processing frames
+[INFO]: 07/17/20 06:21:49 - Starting web server
+[TIME]: 07/17/20 06:21:50 - Processing frame: Action took 1.096068s
+[TIME]: 07/17/20 06:21:51 - Processing frame: Action took 0.719078s
+[TIME]: 07/17/20 06:21:52 - Processing frame: Action took 0.820805s
+[TIME]: 07/17/20 06:21:53 - Processing frame: Action took 0.757969s
+[TIME]: 07/17/20 06:21:53 - Processing frame: Action took 0.795872s
+[TIME]: 07/17/20 06:21:54 - Processing frame: Action took 0.777918s
+[TIME]: 07/17/20 06:21:55 - Processing frame: Action took 0.791884s
+[TIME]: 07/17/20 06:21:56 - Processing frame: Action took 0.793879s
+[TIME]: 07/17/20 06:21:57 - Processing frame: Action took 0.726057s
+[TIME]: 07/17/20 06:21:58 - Processing frame: Action took 1.575785s
+[TIME]: 07/17/20 06:22:04 - Processing frame: Action took 5.724157s
+[TIME]: 07/17/20 06:22:05 - Processing frame: Action took 1.075125s
+[TIME]: 07/17/20 06:22:06 - Processing frame: Action took 1.295537s
+[TIME]: 07/17/20 06:22:09 - Processing frame: Action took 2.599051s
+[TIME]: 07/17/20 06:22:11 - Processing frame: Action took 2.019600s
+[TIME]: 07/17/20 06:22:12 - Processing frame: Action took 1.631637s
+[TIME]: 07/17/20 06:22:15 - Processing frame: Action took 2.832426s
+[TIME]: 07/17/20 06:22:18 - Processing frame: Action took 2.300847s
+[TIME]: 07/17/20 06:22:21 - Processing frame: Action took 3.480694s
+[TIME]: 07/17/20 06:22:24 - Processing frame: Action took 2.756631s
+[TIME]: 07/17/20 06:22:27 - Processing frame: Action took 2.796524s
+[TIME]: 07/17/20 06:22:29 - Processing frame: Action took 2.636950s
+[TIME]: 07/17/20 06:22:32 - Processing frame: Action took 2.992002s
+[TIME]: 07/17/20 06:22:33 - Processing frame: Action took 1.020273s
+[TIME]: 07/17/20 06:22:37 - Processing frame: Action took 1.584763s
+[TIME]: 07/17/20 06:22:37 - Processing frame: Action took 0.821803s
+[TIME]: 07/17/20 06:22:38 - Processing frame: Action took 0.981375s
+[TIME]: 07/17/20 06:22:39 - Processing frame: Action took 0.818814s
+[TIME]: 07/17/20 06:22:40 - Processing frame: Action took 0.862691s
+[HAP]: 07/17/20 06:22:41 - Value changed
+[TIME]: 07/17/20 06:22:44 - Processing frame: Action took 4.279732s
+[TIME]: 07/17/20 06:22:52 - Processing frame: Action took 7.486026s
+[TIME]: 07/17/20 06:22:56 - Processing frame: Action took 3.902646s
+[TIME]: 07/17/20 06:23:00 - Processing frame: Action took 4.108061s
+[TIME]: 07/17/20 06:23:04 - Processing frame: Action took 3.985397s
+[TIME]: 07/17/20 06:23:08 - Processing frame: Action took 3.972554s
+[TIME]: 07/17/20 06:23:12 - Processing frame: Action took 4.089232s
+[TIME]: 07/17/20 06:23:19 - Processing frame: Action took 7.273063s
+[TIME]: 07/17/20 06:23:24 - Processing frame: Action took 5.176455s
+[TIME]: 07/17/20 06:23:30 - Processing frame: Action took 5.293902s
+[TIME]: 07/17/20 06:23:35 - Processing frame: Action took 5.295841s
+[TIME]: 07/17/20 06:23:40 - Processing frame: Action took 5.108402s
+[TIME]: 07/17/20 06:23:46 - Processing frame: Action took 5.668012s
+[TIME]: 07/17/20 06:23:52 - Processing frame: Action took 6.103682s
+[TIME]: 07/17/20 06:23:54 - Processing frame: Action took 2.420530s
+[TIME]: 07/17/20 06:23:56 - Processing frame: Action took 2.225052s
+[TIME]: 07/17/20 06:23:59 - Processing frame: Action took 2.324768s
+[TIME]: 07/17/20 06:24:04 - Processing frame: Action took 4.060552s
+[TIME]: 07/17/20 06:24:07 - Processing frame: Action took 2.659130s
+[TIME]: 07/17/20 06:24:10 - Processing frame: Action took 3.290305s
+[TIME]: 07/17/20 06:24:13 - Processing frame: Action took 3.072789s
+[TIME]: 07/17/20 06:24:15 - Processing frame: Action took 2.383628s
+[TIME]: 07/17/20 06:24:18 - Processing frame: Action took 2.758720s
+[TIME]: 07/17/20 06:24:27 - Processing frame: Action took 9.054267s
+[TIME]: 07/17/20 06:24:32 - Processing frame: Action took 5.126486s
+[TIME]: 07/17/20 06:24:37 - Processing frame: Action took 4.953258s
+[TIME]: 07/17/20 06:24:41 - Processing frame: Action took 3.621370s
+[TIME]: 07/17/20 06:24:45 - Processing frame: Action took 3.721150s
+[TIME]: 07/17/20 06:24:51 - Processing frame: Action took 5.916439s
+[TIME]: 07/17/20 06:24:57 - Processing frame: Action took 6.916620s
+[TIME]: 07/17/20 06:25:03 - Processing frame: Action took 5.240153s
+[TIME]: 07/17/20 06:25:08 - Processing frame: Action took 5.589059s
+[TIME]: 07/17/20 06:25:15 - Processing frame: Action took 6.830883s
+[TIME]: 07/17/20 06:25:22 - Processing frame: Action took 6.799919s
+[TIME]: 07/17/20 06:25:27 - Processing frame: Action took 5.028715s
+[TIME]: 07/17/20 06:25:32 - Processing frame: Action took 4.950930s
+[TIME]: 07/17/20 06:25:35 - Processing frame: Action took 3.143748s
+[TIME]: 07/17/20 06:25:38 - Processing frame: Action took 2.610121s
+[TIME]: 07/17/20 06:25:40 - Processing frame: Action took 2.429559s
+[TIME]: 07/17/20 06:25:42 - Processing frame: Action took 2.231028s
+[TIME]: 07/17/20 06:25:45 - Processing frame: Action took 2.772647s
+[TIME]: 07/17/20 06:25:47 - Processing frame: Action took 2.365024s
+[TIME]: 07/17/20 06:25:50 - Processing frame: Action took 3.022974s
+[TIME]: 07/17/20 06:25:54 - Processing frame: Action took 3.328320s
+[TIME]: 07/17/20 06:25:56 - Processing frame: Action took 2.386767s
+[TIME]: 07/17/20 06:25:59 - Processing frame: Action took 2.520358s
+[TIME]: 07/17/20 06:26:08 - Processing frame: Action took 9.247442s
+[TIME]: 07/17/20 06:26:12 - Processing frame: Action took 3.798896s
+[TIME]: 07/17/20 06:26:14 - Processing frame: Action took 2.158231s
+[TIME]: 07/17/20 06:26:16 - Processing frame: Action took 1.593738s
+[TIME]: 07/17/20 06:26:17 - Processing frame: Action took 1.716409s
+[TIME]: 07/17/20 06:26:19 - Processing frame: Action took 1.583766s
+[TIME]: 07/17/20 06:26:20 - Processing frame: Action took 1.567807s
+[TIME]: 07/17/20 06:26:23 - Processing frame: Action took 2.413547s
+[TIME]: 07/17/20 06:26:25 - Processing frame: Action took 2.322791s
+[TIME]: 07/17/20 06:26:27 - Processing frame: Action took 2.345729s
+[TIME]: 07/17/20 06:26:30 - Processing frame: Action took 2.332763s
+[TIME]: 07/17/20 06:26:32 - Processing frame: Action took 2.274919s
+[TIME]: 07/17/20 06:26:34 - Processing frame: Action took 2.223057s
+[TIME]: 07/17/20 06:26:36 - Processing frame: Action took 0.883639s
+[TIME]: 07/17/20 06:26:37 - Processing frame: Action took 0.696140s
+[TIME]: 07/17/20 06:26:37 - Processing frame: Action took 0.790888s
+[TIME]: 07/17/20 06:26:38 - Processing frame: Action took 1.105045s
+[TIME]: 07/17/20 06:26:39 - Processing frame: Action took 1.035233s
+[TIME]: 07/17/20 06:26:40 - Processing frame: Action took 0.849728s
+[TIME]: 07/17/20 06:26:41 - Processing frame: Action took 0.812825s
+[TIME]: 07/17/20 06:26:42 - Processing frame: Action took 0.749994s
+[TIME]: 07/17/20 06:26:43 - Processing frame: Action took 0.769941s
+[TIME]: 07/17/20 06:26:47 - Processing frame: Action took 4.096633s
+[TIME]: 07/17/20 06:26:49 - Processing frame: Action took 2.237020s
+[HAP]: 07/17/20 06:26:50 - Value changed
+[TIME]: 07/17/20 06:26:53 - Processing frame: Action took 3.682156s
+[INFO]: 07/17/20 06:26:55 - Stopping processing frames - thread
+[TIME]: 07/17/20 06:26:57 - Processing frame: Action took 4.403387s
+[INFO]: 07/17/20 06:26:57 - Stopped processing frames
+[START]: 07/17/20 06:33:28 - Server started
+[INFO]: 07/17/20 06:33:28 - Loading Models
+[TIME]: 07/17/20 06:33:28 - Action took 0.096741s
+[INFO]: 07/17/20 06:33:28 - Loading config
+[SUCC]: 07/17/20 06:33:28 - Done loading
+[INFO]: 07/17/20 06:33:28 - fetching info from web!
+[SUCC]: 07/17/20 06:33:29 - info recvd!
+[INFO]: 07/17/20 06:33:29 - Loading suspects
+[INFO]: 07/17/20 06:33:34 - Loading cameras
+[CONN]: 07/17/20 06:33:34 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:33:52 - done
+[SUCC]: 07/17/20 06:33:52 - Cameras loaded
+[UPDATE]: 07/17/20 06:33:52 - Updating preprocessing values
+[INFO]: 07/17/20 06:33:52 - Starting processing frames - thread
+[INFO]: 07/17/20 06:33:52 - Started processing frames
+[INFO]: 07/17/20 06:33:52 - Starting web server
+[CONN]: 07/17/20 06:33:52 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:34:09 - done
+[CONN]: 07/17/20 06:34:09 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:34:26 - done
+[CONN]: 07/17/20 06:34:26 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:34:44 - done
+[CONN]: 07/17/20 06:34:44 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082
+[DONE]: 07/17/20 06:34:46 - done
+[TIME]: 07/17/20 06:34:46 - Processing frame: Action took 0.763958s
+[TIME]: 07/17/20 06:34:47 - Processing frame: Action took 0.485702s
+[TIME]: 07/17/20 06:34:48 - Processing frame: Action took 0.505649s
+[TIME]: 07/17/20 06:34:48 - Processing frame: Action took 0.497669s
+[TIME]: 07/17/20 06:34:49 - Processing frame: Action took 0.535568s
+[TIME]: 07/17/20 06:34:49 - Processing frame: Action took 0.490688s
+[TIME]: 07/17/20 06:34:50 - Processing frame: Action took 0.521606s
+[TIME]: 07/17/20 06:34:51 - Processing frame: Action took 0.950458s
+[TIME]: 07/17/20 06:34:56 - Processing frame: Action took 4.808307s
+[TIME]: 07/17/20 06:34:57 - Processing frame: Action took 1.641610s
+[TIME]: 07/17/20 06:35:00 - Processing frame: Action took 2.916204s
+[TIME]: 07/17/20 06:35:02 - Processing frame: Action took 2.305835s
+[TIME]: 07/17/20 06:35:04 - Processing frame: Action took 1.814150s
+[TIME]: 07/17/20 06:35:06 - Processing frame: Action took 1.603710s
+[TIME]: 07/17/20 06:35:08 - Processing frame: Action took 2.115349s
+[TIME]: 07/17/20 06:35:13 - Processing frame: Action took 4.769039s
+[HAP]: 07/17/20 06:35:14 - Value changed
+[TIME]: 07/17/20 06:35:16 - Processing frame: Action took 3.321170s
+[TIME]: 07/17/20 06:35:21 - Processing frame: Action took 5.093385s
+[TIME]: 07/17/20 06:35:26 - Processing frame: Action took 4.964728s
+[TIME]: 07/17/20 06:35:31 - Processing frame: Action took 5.137263s
+[TIME]: 07/17/20 06:35:38 - Processing frame: Action took 6.235381s
+[TIME]: 07/17/20 06:35:41 - Processing frame: Action took 2.600154s
+[TIME]: 07/17/20 06:35:44 - Processing frame: Action took 2.450174s
+[TIME]: 07/17/20 06:35:47 - Processing frame: Action took 2.710174s
+[TIME]: 07/17/20 06:35:50 - Processing frame: Action took 3.533010s
+[TIME]: 07/17/20 06:35:52 - Processing frame: Action took 2.176235s
+[TIME]: 07/17/20 06:35:55 - Processing frame: Action took 2.574119s
+[TIME]: 07/17/20 06:35:57 - Processing frame: Action took 2.345762s
+[TIME]: 07/17/20 06:36:00 - Processing frame: Action took 2.570175s
+[TIME]: 07/17/20 06:36:07 - Processing frame: Action took 7.180242s
+[TIME]: 07/17/20 06:36:14 - Processing frame: Action took 7.067831s
+[TIME]: 07/17/20 06:36:19 - Processing frame: Action took 4.797359s
+[TIME]: 07/17/20 06:36:23 - Processing frame: Action took 3.925553s
+[TIME]: 07/17/20 06:36:27 - Processing frame: Action took 3.846809s
+[TIME]: 07/17/20 06:36:31 - Processing frame: Action took 3.807002s
+[TIME]: 07/17/20 06:36:34 - Processing frame: Action took 3.972437s
+[TIME]: 07/17/20 06:36:40 - Processing frame: Action took 5.619035s
+[TIME]: 07/17/20 06:36:45 - Processing frame: Action took 5.155541s
+[TIME]: 07/17/20 06:36:51 - Processing frame: Action took 5.278888s
+[TIME]: 07/17/20 06:36:56 - Processing frame: Action took 5.194153s
+[TIME]: 07/17/20 06:37:02 - Processing frame: Action took 5.843652s
+[CONN]: 07/17/20 06:37:03 - connecting to camera 5f10afa2ea5ea2001740a0d1, url: http://localhost:8082

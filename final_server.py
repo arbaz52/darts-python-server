@@ -5,12 +5,11 @@ import ntpath
 from os.path import exists
 from face import FaceDAndR
 import cv2
-from Inventory import Suspect, Person, Track
+from opt_inventory import Suspect, Inventory
 from preprocessing import Preprocessing
 import time
 import json
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 from camera import Camera
@@ -31,10 +30,9 @@ from logger import Logger
 class Server:
     def __init__(self):
         self.log("START", "Server started")
-        self.recognizeThresh = 5
         self.xo = 0
         self.lock = threading.Lock()
-        
+
 
         st = time.time()
         self.log("INFO","Loading Models")
@@ -61,6 +59,14 @@ class Server:
         self.startWebServer()
         
         
+    def textOnFrame(self, frame, label, org, fc=(255,255,255), bc=(0,0,0)):
+        x1 = org[0]
+        y1 = org[1]
+        img = frame
+        t_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_PLAIN, 1 , 1)[0]
+        cv2.rectangle(img,(x1, y1-5),(x1+t_size[0]+3,y1+t_size[1]+4+5), bc,-1)
+        cv2.putText(img,label,(x1,y1+t_size[1]+4), cv2.FONT_HERSHEY_PLAIN, 1, fc, 1)
+
         
     
     
@@ -76,16 +82,15 @@ class Server:
         self.log("INFO", "Stopping processing frames - thread")
         self.keepProcessingFrames = False
         
-        for k, v in self.cameras.items():
-            v.stopThread()
-        
     
         
     
     def processFrameOf(self, camera):
         if not camera.isUp():
             #self.log("WARN", "Video stream for Camera: " + camera._id + " not available")
+            camera.connect()
             return False
+        
         maxt = 10
         frame = None
         for i in range(1, maxt+1):
@@ -99,6 +104,7 @@ class Server:
         
         if frame is None:
             #self.log("WARN", "Couldn't access a valid frame")
+            camera.reconnect()
             return False
         
         
@@ -129,59 +135,100 @@ class Server:
             
         
         
-        #person detection
-        #plt.imshow(frame)
-        self.log("INFO", "Detecting People in the frame")
-        bboxes, conf = self.pd.detect(frame, drawOnFrame=False)
-        #overlapping bounding boxes
-        self.log("INFO", "Applying nms")
-        bboxes = non_max_suppression(np.array(bboxes), probs=None, overlapThresh=0.65)
-        #tracking
-        if len(bboxes) > 0:
-            
-            tbboxes, tids = camera.tk.track(frame, bboxes, conf, drawOnFrame=False)
-            if len(tbboxes) > 0:
-                
-                self.log("INFO", "Tracking people {}".format(len(tids)))
-                for i in range(len(tbboxes)):
-                    tbbox = np.array(tbboxes[i], np.int32)
-                    tid = tids[i]
-                    #increasing fps by selective recognition
-                    if camera.track.hasPerson(tid):
-                        if camera.track.people[tid].isSuspect():
-                            if time.time() - camera.track.people[tid].whenRecognized < self.recognizeThresh:
-                                continue
-                            
-                    person = frame[tbbox[1]:tbbox[3], tbbox[0]:tbbox[2]]
-                    #cv2.imshow("person: ", person)
-                    faces = fdr.extractFaces(person, drawOnFrame = False)
-                    if len(faces) <= 0:
-                        continue
-                    
-                    face = faces[0]
-                    fe = fdr.getEmbedding(face[0])
-                    
-                    #check if he/she is a suspect
-                    suspectDetected = False
-                    for k, suspect in self.suspects.items():
-                        #{"face":face, "em":em, "path":path}  
-                        for pic in suspect.pictures:
-                            em = pic['em']
-                            if fdr.is_match(em, fe):
-                                camera.track.suspectDetected(tid, suspect, time.time(), frame, self.SERVER_ID, camera._id)
-                                suspectDetected = True
-                                break
-                        if suspectDetected:
-                            break
-                    
-                #update track
-                camera.track.updatePositions(tbboxes, tids)
+        #processing
+        cameraId = camera._id
+        t = 0
         
-        camera.track.clearForgotten()
-        #display bboxes and everything
-        camera.track.draw(frame)
-        #udpate the processedFrame
-        #cv2.imshow("Frame", frame)
+        st = time.time()
+        bboxes, conf = self.pd.detect(frame, drawOnFrame=False)
+        et = time.time()
+        t += (et-st)
+        if len(bboxes) == 0:
+            return False
+        #print("detection time taken: {:2.4f}s".format(et-st))
+        
+        st = time.time()
+        bboxes, ids, cents = camera.tk.track(frame, bboxes, conf, returnCentroids=True, drawOnFrame=False)
+        et = time.time()
+        t += (et - st)
+        if len(bboxes) == 0:
+            return False
+        #print("tracking time taken: {:2.4f}s".format(et-st) )
+        
+        st = time.time()
+        facesWithIds = fdr.extractFacesAndAssignToPeople(frame, bboxes, ids, cents, drawOnFrame=False)
+        et = time.time()
+        t += (et - st)
+        #print("extracting faces time taken: {:2.4f}s".format(et-st) )
+        
+        #drawing normal boxes around detected people
+        for i in range(len(bboxes)):
+            _bbox = bboxes[i]
+            _id = ids[i]
+            _cent = cents[i]
+            st = (int(_bbox[0]), int(_bbox[1]))
+            end = (int(_bbox[2]), int(_bbox[3]))
+            clr = (0, 255, 0)
+            cv2.rectangle(frame, st, end, clr, 2)
+            label="ID:{}".format(_id)
+            self.textOnFrame(frame, label, fc=(0,0,0), bc=(0,255,0), org=(int(_cent[0]), int(_cent[1])))
+        
+        for fd in facesWithIds:
+            _c = fd[1]
+            st = (_c[0], _c[1])
+            end = (_c[2], _c[3])
+            cv2.rectangle(frame, st, end, (255, 0, 0), 2)
+        
+        self.inventory.update()
+        for suspect in self.inventory.suspects:
+            #recognition
+            if suspect.shouldRecognize():
+                recognized = -1
+                for embd in suspect.embds:
+                    for index, facedata in enumerate(facesWithIds):
+                        if fdr.is_match(facedata[3], embd):
+                            recognized = index
+                            break
+                    if recognized >= 0:
+                        faceWithId = facesWithIds.pop(recognized)
+                        personId = cameraId + "_" + str(faceWithId[2])
+                        
+                                
+                        try:
+                            _trackIdIndex = ids.index(faceWithId[2])
+                            if not _trackIdIndex > -1:
+                                continue
+                        except:
+                            continue
+                            
+                        _bbox = bboxes[_trackIdIndex]
+                        self.markSuspectOnFrame(frame, suspect, _bbox)
+                        
+                        suspect.recognized(personId, frame, self.SERVER_ID, cameraId)
+                        break
+                    
+                if recognized == -1:
+                    if suspect.last_time_recognized != None:
+                        if time.time() - suspect.last_time_recognized > 20:
+                            suspect.personId = None
+                    
+            #displaying the person red on frame
+            if suspect.personId != None:
+                _trackId = int(suspect.personId.split("_")[1])
+                try:
+                    _trackIdIndex = ids.index(_trackId)
+                    if not _trackIdIndex > -1:
+                        continue
+                except:
+                    continue
+                    
+                _bbox = bboxes[_trackIdIndex]
+                self.markSuspectOnFrame(frame, suspect, _bbox)
+        
+        
+        print("processing one frame: {:2.4f}s".format(t))
+        
+        
         
         t = time.localtime()
         text = "Server: " + time.strftime("%H:%M:%S", t)
@@ -193,6 +240,11 @@ class Server:
             self.xo = 1
         return True
         
+    def markSuspectOnFrame(self, frame, suspect, _bbox):
+        x1,y1,x2,y2 = _bbox[0],_bbox[1],_bbox[2],_bbox[3]
+        cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 0, 255), 3)
+        text = "Suspect: " + suspect.fullName
+        self.textOnFrame(frame, text, (int(x1), int(y1+5)), bc=(0, 0, 255), fc=(0,0,0))
         
     def processFrames(self):
         cameraCurrentlySelected = 0
@@ -264,7 +316,7 @@ class Server:
 
     def loadSuspects(self, data):
         self.log("INFO", "Loading suspects")
-        self.suspects = {}
+        self.suspects = []
         suspects_data = data['server']['suspects']
         for suspect_data in suspects_data:
             
@@ -285,19 +337,13 @@ class Server:
                     wget.download(picture_url, out="suspect_pictures/")
                     self.log("SUCC", path + " downloaded")
                 
-                #extract face and emb
-                img = cv2.imread(path)
-                faces = self.fdr.extractFaces(img)
-                if len(faces) == 0:
-                    print("SKIP", "No face detected")
-                    continue
-                face = faces[0][0]
-                em = self.fdr.getEmbedding(face)
-                picture = {"face":face, "em":em, "path":path}  
-                pictures.append(picture)
+                  
+                pictures.append(path)
             
-            suspect = Suspect(_id, fullName, gender, pictures, tags)
-            self.suspects[_id] = suspect
+            suspect = Suspect(_id, fullName, gender, tags, pictures, self.fdr)
+            self.suspects.append(suspect)
+            
+        self.inventory = Inventory(self.suspects)
         
         self.log("SUCC", "Suspects loaded")
         return True

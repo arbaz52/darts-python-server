@@ -9,7 +9,7 @@ class PersonDetection:
     def setup(self):
         self._class = 15 #according to model 15th index is person
         self.color = (0, 255, 0)
-        self.conf = 0.2
+        self.conf = 0.4
         
         
         #loading the model
