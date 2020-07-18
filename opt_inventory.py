@@ -48,12 +48,21 @@ class Suspect:
             r = requests.post(url,files=files, data=d)
             print(r.json())
         else:
-            print("Alert generated for " + self.fullName + "less than 20 seconds ago!")
+            print("Alert generated for " + self.fullName + " less than 20 seconds ago!")
     
     
     def update(self):
         if self.shouldRecognize():
             print(self.fullName + " up for recognition")
+            
+    def getSnapShot(self):
+        return (self.personId, self.last_time_recognized, self.last_time_alert_generated)
+    
+    def loadSnapShot(self, ss):
+        self.personId = ss[0]
+        self.last_time_recognized = ss[1]
+        self.last_time_alert_generated = ss[2]
+        
     
 class Inventory:
     def __init__(self, suspects):

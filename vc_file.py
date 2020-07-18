@@ -47,6 +47,7 @@ def read_frame_thread():
             
         frame = cv2.resize(frame, (int(w*s), int(h*s)), cv2.INTER_CUBIC)
         frame = cv2.flip(frame, 1)
+        #frame = cv2.rotate(frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
         with lock:
             outputFrame = frame
         
@@ -61,6 +62,8 @@ def gen():
             t = time.localtime()
             text = "IPCamera: " + time.strftime("%H:%M:%S", t)
             cv2.putText(frame, text, (10, 30), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 255), 1)
+            
+
             _, encodedImage = cv2.imencode('.jpg', frame)
             yield(b'--frame\r\n' b'Content-Type: image/jpeg\r\n\r\n' + 
                   bytearray(encodedImage) + 

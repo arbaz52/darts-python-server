@@ -43,6 +43,3 @@ class Jsoner:
 
         return True
     
-x = Jsoner.readJson("a.json")
-json.dumps(x)
-Jsoner.saveJson(x, "asd.json")

@@ -18,6 +18,28 @@ class Camera:
         self.setup()
         self.invalidframescount = 0
         
+    def getSnapShot(self):
+        return (self.processedFrame, self.processedFrameTime, self.tk, self.invalidframescount, self.url, self.lat, self.lng)
+    
+    '''
+        returns True: 
+            remove personId from the suspects this camera was tracking
+        return False:
+            do nothing
+    '''
+    def loadSnapShot(self, ss):
+        self.processedFrame = ss[0]
+        self.processedFrameTime = ss[1]
+        self.tk = ss[2]
+        self.invalidframescount = ss[3]
+        if ss[4] != self.url or ss[5] != self.lat or ss[6] != self.lng:
+            Logger._log("INFO", "Physical aspects of this camera changed", True)
+            Logger._log("INFO", "Tracking restarted for this camera", True)
+            self.tk =  Tracking(1)
+            return True
+        return False
+        
+        
     
     def reconnect(self):
         self.invalidframescount += 1

@@ -9,9 +9,10 @@ from opt_inventory import Suspect, Inventory
 from preprocessing import Preprocessing
 import time
 import json
-
+from jsoner import Jsoner
 import numpy as np
-
+import os
+import sys
 from camera import Camera
 
 import threading
@@ -28,35 +29,37 @@ from person_detection import PersonDetection
 from logger import Logger
 
 class Server:
+    CONFIG_FILE_PATH = "config.json"
     def __init__(self):
-        self.log("START", "Server started")
+        self.log("START", "Server started", True)
         self.xo = 0
         self.lock = threading.Lock()
 
 
         st = time.time()
-        self.log("INFO","Loading Models")
+        self.log("INFO","Loading Models", True)
         self.pd = PersonDetection()
         global fdr
         self.fdr = fdr
         
         
-        print("Done")
         et = time.time()
-        self.log("TIME", "Action took {:2.6f}s".format((et-st)))
+        self.log("TIME", "Action took {:2.6f}s".format((et-st)), True)
         
         self.preprocessings = {}
         
-        self.loadConfig()
+        self._loadConfig()
         data = self.loadServerInfoFromWeb()
         if data is not None:
             self.loadSuspects(data)
             self.loadCameras(data)
             self.loadPreprocessingValuesFromWeb(data)
-            
-        self.keepProcessingFrames = False
-        self.startProcessingFrames()
-        self.startWebServer()
+            self.keepProcessingFrames = False
+            self.startProcessingFrames()
+            self.startWebServer()
+        else:
+            self.log("ERR", "Couldn't load information from (REST API), check internet connection and URL", True)
+            return
         
         
     def textOnFrame(self, frame, label, org, fc=(255,255,255), bc=(0,0,0)):
@@ -72,14 +75,14 @@ class Server:
     
     def startProcessingFrames(self):
         if self.keepProcessingFrames:
-            self.log("WARN", "Processing frames - thread already running")
+            self.log("WARN", "Processing frames - thread already running", True)
             return True
-        self.log("INFO", "Starting processing frames - thread")
+        self.log("INFO", "Starting processing frames - thread", True)
         self.keepProcessingFrames = True
         self.thread = threading.Thread(target=self.processFrames, args=()).start()
     
     def stopProcessingFrames(self):
-        self.log("INFO", "Stopping processing frames - thread")
+        self.log("INFO", "Stopping processing frames - thread", True)
         self.keepProcessingFrames = False
         
     
@@ -250,8 +253,14 @@ class Server:
         cameraCurrentlySelected = 0
         keys = list(self.cameras.keys())
         
-        self.log("INFO", "Started processing frames")
+        self.log("INFO", "Started processing frames", True)
         while self.keepProcessingFrames:
+            #stopping thread if no cameras attached
+            if len(keys) == 0:
+                self.log("WARN", "No cameras attached to this server", True)
+                self.stopProcessingFrames()
+                continue
+                
             key = keys[cameraCurrentlySelected]
             camera = self.cameras[key]
             
@@ -268,11 +277,11 @@ class Server:
                 
             #time.sleep(2)
             
-        self.log("INFO", "Stopped processing frames")
+        self.log("INFO", "Stopped processing frames", True)
 
         
     def loadConfig(self):
-        self.log("INFO", "Loading config")
+        self.log("INFO", "Loading config", True)
         confParser = configparser.ConfigParser()
         confParser.read("config.ini")
         
@@ -285,37 +294,88 @@ class Server:
         #web server url
         self.WEB_SERVER = confParser['WEB_SERVER']['URL']
         self.WEB_SERVER_PORT = confParser['WEB_SERVER']['PORT']
-        self.log("SUCC", "Done loading")
+        self.log("SUCC", "Done loading", True)
+        
+    def _loadConfig(self):
+        self._removeConfig()
+        self._loadConfigFile()
+            
+    def _removeConfig(self):
+        recreate = input("Use existing {} file? (y/n): ".format(Server.CONFIG_FILE_PATH))
+        try:
+            if recreate == 'n' or recreate == 'N':
+                self.log("WARN", "Removing old {}".format(Server.CONFIG_FILE_PATH), True)
+                os.remove(Server.CONFIG_FILE_PATH)
+        except:
+            self.log("EXCEPT", "Error occured while removing", True)
+    
+    def _loadConfigFile(self):
+        if(os.path.exists(Server.CONFIG_FILE_PATH)):
+            self.log("INFO", "Loading from {}".format(Server.CONFIG_FILE_PATH), True)
+            try:
+                config = Jsoner.readJson(Server.CONFIG_FILE_PATH)
+                self.WEB_SERVER = config['web_server_url']
+                self.SERVER_ID = config['serverId']
+            except:
+                self.log("EXCEPT", "Couldn't read {}".format(Server.CONFIG_FILE_PATH), True)
+                self._createConfigFile()
+        else:
+            self._createConfigFile()
+    
+    def _createConfigFile(self):
+        self.log("WARN", "Config file not found!", True)
+        self.log("INFO", "Creating config", True)
+        web_server_url = None
+        serverId = None
+        while web_server_url == None or len(web_server_url) == 0:
+            web_server_url = input("URL of the express-web-server (REST API): ")
+        
+        while serverId == None or len(serverId) == 0:
+            serverId = input("ID of this server assigned by (REST API): ")
+        
+        conf = {}
+        conf['web_server_url'] = web_server_url
+        conf['serverId'] = serverId
+        
+        Jsoner.saveJson(conf, Server.CONFIG_FILE_PATH)
+        self._loadConfigFile()
+        
+        
+            
         
         
             
     def loadServerInfoFromWeb(self):
-        self.log("INFO", "fetching info from web!")
+        self.log("INFO", "fetching info from web!", True)
         
         #url = "http://"+self.WEB_SERVER+":"+self.WEB_SERVER_PORT+"/server/"
-        url = self.WEB_SERVER + "server/"
+        _ = '' if self.WEB_SERVER[-1] == '/' else '/'
+        url = self.WEB_SERVER + _ +"server/"
         print(url)
         
         #request server details
-        resp = requests.get(url+self.SERVER_ID)
-        if resp.status_code != 200:
-            self.log("ERR","Could not fetch server details!")
+        try:
+            resp = requests.get(url+self.SERVER_ID)
+            if resp.status_code != 200:
+                self.log("ERR","Could not fetch server details!", True)
+                return None
+            
+            data = resp.json()
+            if 'err' in data :
+                self.log("ERR", data['err']['message'], True)
+                return None
+            
+            #self.log("DATA", data)
+            self.log("SUCC", "info recvd!", True)
+            
+            self.data = data
+            return data
+        except:
+            self.log("EXCEPT", "Exception while requesting the (REST API) '{}'".format(self.WEB_SERVER), True)
             return None
-        
-        data = resp.json()
-        if 'err' in data :
-            self.log("ERR", data['err']['message'])
-            return None
-        
-        #self.log("DATA", data)
-        self.log("SUCC", "info recvd!")
-        
-        self.data = data
-        
-        return data
 
     def loadSuspects(self, data):
-        self.log("INFO", "Loading suspects")
+        self.log("INFO", "Loading suspects", True)
         self.suspects = []
         suspects_data = data['server']['suspects']
         for suspect_data in suspects_data:
@@ -333,9 +393,9 @@ class Server:
                 
                 path = "suspect_pictures/"+picture_name
                 if not exists(path):
-                    self.log("DOWN", picture_name)
+                    self.log("DOWN", picture_name, True)
                     wget.download(picture_url, out="suspect_pictures/")
-                    self.log("SUCC", path + " downloaded")
+                    self.log("SUCC", path + " downloaded", True)
                 
                   
                 pictures.append(path)
@@ -345,12 +405,12 @@ class Server:
             
         self.inventory = Inventory(self.suspects)
         
-        self.log("SUCC", "Suspects loaded")
+        self.log("SUCC", "Suspects loaded", True)
         return True
         
 
     def loadCameras(self, data):
-        self.log("INFO", "Loading cameras")
+        self.log("INFO", "Loading cameras", True)
         self.cameras = {}
         cameras_data = data['server']['cameras']
         for camera_data in cameras_data:
@@ -362,36 +422,118 @@ class Server:
             self.cameras[_id] = camera
         
             
-        self.log("SUCC", "Cameras loaded")
+        self.log("SUCC", "Cameras loaded", True)
         return True
     
     def loadPreprocessingValuesFromWeb(self, data = None):
         if data is None:
             #loads the preprocessing values for the cameras
-            self.log("FETCH", "fetching preprocessing values from web")
+            self.log("FETCH", "fetching preprocessing values from web", True)
             data = self.loadServerInfoFromWeb()
             self.loadPreprocessingValuesFromWeb(data)
         else:
-            self.log("UPDATE", "Updating preprocessing values")
+            self.log("UPDATE", "Updating preprocessing values", True)
             json.dumps(data)
             self.preprocessings = data['server']['preprocessings']
         
     
     '''
+    updating
+    '''
+    def _updateSuspects(self):
+        self.log("UPDATE", "Updating suspects", True)
+        self.stopProcessingFrames()
+        time.sleep(2)
+        #updating
+        data = self.loadServerInfoFromWeb()
+        if data != None:
+            if 'err' in data:
+                self.log("ERR", data['err']['message'], True)
+            else:
+                if 'suspects' in data['server']:
+                    self.log("INFO", "Saving snapshots of current suspects", True)
+                    #current list of suspects being processed
+                    _invSuspects = self.inventory.suspects
+                    #snapshot of the suspects
+                    _invss = {}
+                    for _is in _invSuspects:
+                        _invss[_is._id] = _is.getSnapShot()
+                    
+                    self.log("INFO", "Loading new list of suspects", True)
+                    self.loadSuspects(data)
+                    #new list of suspects being processed
+                    self.log("INFO", "Loading snapshots for the already existing suspects", True)
+                    _invSuspects = self.inventory.suspects
+                    for _is in _invSuspects:
+                        if _is._id in _invss:
+                            self.log("INFO", "loading snapshot of " + _is.fullName, True)
+                            _is.loadSnapShot(_invss[_is._id])
+                    self.log("DONE", "Done updating suspects")
+        else:
+            self.log("ERR", "Empty data from server", True)
+        self.startProcessingFrames()
+    
+    def _updateCameras(self):
+        self.log("UPDATE", "Updating cameras", True)
+        self.stopProcessingFrames()
+        #updating
+        data = self.loadServerInfoFromWeb()
+        if data != None:
+            if 'err' in data:
+                self.log("ERR", data['err']['message'], True)
+            else:
+                if 'cameras' in data['server']:
+                    self.log("INFO", "Saving snapshots of current cameras", True)
+                    #current list of suspects being processed
+                    _cams = self.cameras
+                    #snapshot of the suspects
+                    _camsss = {}
+                    for _id, _cam in _cams.items():
+                        _camsss[_id] = _cam.getSnapShot()
+                    
+                    self.log("INFO", "Loading new list of cameras", True)
+                    self.loadCameras(data)
+                    #new list of suspects being processed
+                    self.log("INFO", "Loading snapshots for the already existing cameras", True)
+                    for _id, _cam in self.cameras.items():
+                        if _id in _camsss:
+                            self.log("INFO", "loading snapshot of " + _cam._id +", url: " + _cam.url , True)
+                            if _cam.loadSnapShot(_camsss[_id]):
+                                for _s in self.inventory.suspects:
+                                    if _s.personId != None:
+                                        cId = _s.personId.split("_")[0]
+                                        if cId == _cam._id:
+                                            self.log("INFO", "Removing tracking from suspect: " + _s.fullName)
+                                            _s.personId = None
+                    self.log("DONE", "Done updating suspects")
+        self.startProcessingFrames()
+        
+    def _alive(self):
+        self.log("IS", "Checking if server has been deleted or not", True)
+        self.stopProcessingFrames()
+        #updating
+        data = self.loadServerInfoFromWeb()
+        if data == None or 'err' in data:
+            self.log("EXIT", "Stopping the server", True)
+            sys.exit()
+        else:
+            self.startProcessingFrames()
+    
+    '''
     logger
     '''
-    def log(self, _type, msg):
-        Logger._log(_type, msg)
+    def log(self, _type, msg, printOnTerminal = False):
+        Logger._log(_type, msg, printOnTerminal)
         
         
-        
+    
             
     '''
     web server
     
     '''
     def startWebServer(self):
-        self.log("INFO", "Starting web server")
+        self.log("INFO", "Starting web server", True)
         app = Flask("Python server")
         run_with_ngrok(app)
         self.app = app
@@ -410,22 +552,41 @@ class Server:
         @app.route("/start")
         def start():
             self.startProcessingFrames()
-            self.log("START", "Starting server")
+            self.log("START", "Starting server", True)
             return make_response("Starting server", 200)
             
             
         @app.route("/stop")
         def stop():
             self.stopProcessingFrames()
-            self.log("STOP", "Stopping server")
+            self.log("STOP", "Stopping server", True)
             return make_response("Stopping server", 200)
         
         
         @app.route("/updatep")
         def updatePreprocessingValues():
-            self.log("UPDATE", "Updating preprocessing values")
+            self.log("UPDATE", "Updating preprocessing values", True)
             self.loadPreprocessingValuesFromWeb()
             return make_response("Updating preprocessing values", 200)
+        
+        @app.route("/updatec")
+        def updateCameras():
+            self.log("UPDATE", "Updating Cameras", True)
+            self._updateCameras()
+            return make_response("Updating Cameras", 200)
+        
+        @app.route("/updates")
+        def updateSuspects():
+            self.log("UPDATE", "Updating Suspects", True)
+            self._updateSuspects()
+            return make_response("Updating Suspects", 200)
+        
+        @app.route("/alive")
+        def alive():
+            self.log("ALIVE", "Checking if server still alive", True)
+            self._alive()
+            return make_response("Checking if still alive.", 200)
+        
         
         #server commands to stop processing thread
         @app.route("/startfp")
@@ -478,7 +639,7 @@ class Server:
                     print("Empty frame")
                     frame = np.random.randint(0,256,(h, w,3), dtype=np.uint8)
             except:
-                print("exception while reading frame")
+                #print("exception while reading frame")
                 frame = np.random.randint(0,256,(h, w,3), dtype=np.uint8)
                 
             _, encodedImage = cv2.imencode('.jpg', frame)
@@ -487,7 +648,7 @@ class Server:
                   b'\r\n')
         
 
-fdr = FaceDAndR() 
+#fdr = FaceDAndR() 
 server = Server()
 cv2.destroyAllWindows()
 
